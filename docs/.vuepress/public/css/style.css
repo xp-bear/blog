@@ -1,0 +1,14 @@
+a {
+  color: #333;
+  text-decoration: none;
+}
+/* 加载文字前面的图片 */
+#app .navbar .home-link span:before {
+  display: inline-block;
+  content: "";
+  width: 2.8rem;
+  height: 2.8rem;
+  background: url("../img/logo.png") no-repeat;
+  background-size: 100% 100%;
+  vertical-align: middle;
+}
