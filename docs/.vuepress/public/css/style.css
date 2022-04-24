@@ -79,8 +79,9 @@ body::-webkit-scrollbar-track {
 .language-python::-webkit-scrollbar-thumb {
   /*滚动条里面小方块*/
   border-radius: 10px;
-  background-color: #1da1f2;
-  /* background: linear-gradient(to top, #11998e, #38ef7d); */
+  /* background-color: #1da1f2; */
+  background: linear-gradient(to left, #feac5e, #c779d0, #4bc0c8);
+  /* 
   background-image: -webkit-linear-gradient(
     45deg,
     rgba(255, 255, 255, 0.2) 25%,
@@ -90,7 +91,7 @@ body::-webkit-scrollbar-track {
     rgba(255, 255, 255, 0.2) 75%,
     transparent 75%,
     transparent
-  );
+  ); */
 }
 .language-python::-webkit-scrollbar-track {
   /*滚动条里面轨道*/
