@@ -12,6 +12,10 @@ a {
   background-size: 100% 100%;
   vertical-align: middle;
 }
+html,
+body {
+  background-color: rgba(255, 255, 255, 0.7) !important;
+}
 
 /* body滚动条 */
 body::-webkit-scrollbar {
@@ -98,4 +102,8 @@ body::-webkit-scrollbar-track {
   box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
   background: #ededed;
   border-radius: 10px;
+}
+#mydiv {
+  width: 100%;
+  height: 100vh;
 }

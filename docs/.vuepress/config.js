@@ -7,6 +7,7 @@ module.exports = {
   head: [
     ["link", { rel: "icon", href: "/img/favicon.ico" }],
     ["link", { rel: "stylesheet", href: "/css/style.css" }],
+    ["script", { charset: "utf-8", src: "/js/canvas-particle.js" }], //新加入
     ["script", { charset: "utf-8", src: "/js/main.js" }], //新加入
   ],
   markdown: {
