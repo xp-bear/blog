@@ -1,6 +1,6 @@
 # 小白从入门到入土
 
-本套资料是作者随笔学习记录,持续更新! 
+本套资料是作者随笔学习记录,持续更新!
 
 **资料包含**
 
@@ -11,8 +11,6 @@
 - 数据结构与算法
 - ...
 
-
-
-**笔者仓库地址**
+**笔者仓库地址**<br/>
 :earth_asia:github 地址 : **https://github.com/xp-bear** <br/>
 :earth_asia:gitee 地址 : **https://gitee.com/xp-bear**
