@@ -1,3 +1,4 @@
+const moment = require("moment");
 module.exports = {
   title: "想走过亚洲的熊",
   description: "记录、思考、生活",
@@ -26,4 +27,29 @@ module.exports = {
     editLinks: true,
     editLinkText: "在 GitHub 上编辑此页 !",
   },
+  plugins: [
+    [
+      "@vuepress/active-header-links",
+      {
+        sidebarLinkSelector: ".sidebar-link",
+        headerAnchorSelector: ".header-anchor",
+      },
+    ],
+    ["@vuepress/back-to-top"],
+    ['"@vuepress/nprogress"'],
+    [
+      "@vuepress/last-updated",
+      {
+        transformer: (timestamp, lang) => {
+          // 不要忘了安装 moment
+          const moment = require("moment");
+          moment.locale(lang);
+          return moment(timestamp).fromNow();
+        },
+        dateOptions: {
+          hour12: false,
+        },
+      },
+    ],
+  ],
 };

@@ -7,7 +7,8 @@ module.exports = [
     text: "前端",
     // link: "/baodian/",
     items: [
-      { text: "HTML5学习", link: "/baodian/zero/" },
+      // { text: "HTML5学习", link: "/front/zero/" },
+      { text: "django学习", link: "/front/zero/" },
       {
         text: "CSS3进阶",
         link: "/baodian/high/",
