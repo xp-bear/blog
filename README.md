@@ -11,8 +11,6 @@
 - 数据结构与算法
 - ...
 
-
-
 **笔者仓库地址** <br/>
 :earth_asia:github 地址 : **https://github.com/xp-bear** <br/>
 :earth_asia:gitee 地址 : **https://gitee.com/xp-bear**
