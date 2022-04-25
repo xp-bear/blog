@@ -2,12 +2,12 @@ a {
   color: #333;
   text-decoration: none;
 }
-/* 加载文字前面的图片 */
+/* 加载导航栏文字前面的图片 */
 #app .navbar .home-link span:before {
   display: inline-block;
   content: "";
-  width: 2.8rem;
-  height: 2.8rem;
+  width: 2.6rem;
+  height: 2.6rem;
   background: url("../img/logo.png") no-repeat;
   background-size: 100% 100%;
   vertical-align: middle;
@@ -15,6 +15,7 @@ a {
 html,
 body {
   background-color: rgba(255, 255, 255, 0.7) !important;
+  font-size: 18px !important;
 }
 
 /* body滚动条 */
@@ -103,7 +104,15 @@ body::-webkit-scrollbar-track {
   background: #ededed;
   border-radius: 10px;
 }
+/* 背景的科技粒子 */
 #mydiv {
   width: 100%;
   height: 100vh;
+}
+
+.theme-default-content,
+.page-nav,
+.page-nav {
+  max-width: 1000px !important;
+  font: size 18px !important;
 }
