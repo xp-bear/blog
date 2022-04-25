@@ -116,3 +116,12 @@ body::-webkit-scrollbar-track {
   max-width: 1000px !important;
   font: size 18px !important;
 }
+
+/* 音乐设置 */
+#myaudio {
+  position: fixed;
+  bottom: 0;
+  right: 5rem;
+  z-index: 1;
+  display: none;
+}

@@ -16,7 +16,29 @@ window.onload = function () {
   let div = document.createElement("div");
   div.setAttribute("id", "mydiv");
   body.appendChild(div);
-  //配置
+  // 加载音乐背景插件
+  const setAttributes = (element, attributes) => {
+    for (let key in attributes) {
+      if (Object.prototype.toString.call(attributes[key]) === "[object Object]") {
+        setAttributes(element[key], attributes[key]);
+      } else {
+        element[key] = attributes[key];
+      }
+    }
+  };
+  let iframe = document.createElement("iframe");
+  setAttributes(iframe, {
+    id: "myaudio",
+    frameborder: "no",
+    border: "0",
+    marginwidth: "0",
+    width: "260",
+    height: "80",
+    src: "http://music.163.com/outchain/player?type=2&id=28403111&auto=1&height=66",
+  });
+  body.appendChild(iframe);
+
+  //背景配置粒子
   var config = {
     vx: 4, //小球x轴速度,正为右，负为左
     vy: 4, //小球y轴速度
