@@ -1,4 +1,3 @@
-const moment = require("moment");
 module.exports = {
   title: "想走过亚洲的熊",
   description: "记录、思考、生活",

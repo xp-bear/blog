@@ -4,7 +4,7 @@
 
 - 目前Web开发属于Browser/Server模式，简称B/S架构，开发语言有（Python、PHP、Java 、node.js ...）。
 - 基于Python的Web工作原理如下：
-- ![img](http://pic.xxoutman.cn/img/webjg.png)
+- ![img](http://mk.xxoutman.cn/img/webjg.png)
 
 ## (2). 框架介绍：
 
@@ -72,9 +72,9 @@
 
 - Django的开发版本
 
-![img](http://pic.xxoutman.cn/img/release-roadmap.e844db08610e.png)
+![img](http://mk.xxoutman.cn/img/release-roadmap.e844db08610e.png)
 
-![img](http://pic.xxoutman.cn/img/22.png)
+![img](http://mk.xxoutman.cn/img/22.png)
 
 ## (4). Django的安装
 
