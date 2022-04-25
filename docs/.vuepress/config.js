@@ -52,5 +52,12 @@ module.exports = {
         },
       },
     ],
+    [
+      require("./vuepress-plugin-code-copy"),
+      {
+        copybuttonText: "复制",
+        copiedButtonText: "已复制！",
+      },
+    ],
   ],
 };
