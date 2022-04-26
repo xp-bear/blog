@@ -3,6 +3,7 @@ window.onload = function () {
   let div = document.createElement("div");
   div.setAttribute("id", "mydiv");
   body.appendChild(div);
+  // #region
   // 加载音乐背景插件
   // const setAttributes = (element, attributes) => {
   //   for (let key in attributes) {
@@ -41,6 +42,7 @@ window.onload = function () {
   //     myaudio.classList.add = "animationIn";
   //   }, 300);
   // });
+  // #endregionend
 
   //背景配置粒子
   var config = {
@@ -54,7 +56,8 @@ window.onload = function () {
     color: "30, 30, 30", //点颜色
     stroke: "79, 79, 79", //线条颜色
     dist: 6000, //点吸附距离
-    e_dist: 20000, //鼠标吸附加速距离
+    e_dist: 6000, //鼠标吸附加速距离
+    // e_dist: 20000, //鼠标吸附加速距离
     max_conn: 10, //点到点最大连接数
   };
 

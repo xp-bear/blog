@@ -6,4 +6,6 @@ module.exports = {
   "/baodian/high": require("../baodian/high/sidebar"),
 
   "/front/zero/": require("../front/zero/sidebar"),
+  "/front/mysql/": require("../front/mysql/sidebar"),
+  
 };

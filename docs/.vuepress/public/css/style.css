@@ -76,12 +76,20 @@ body::-webkit-scrollbar-track {
 }
 
 /* 代码,滚动条 */
-.language-python::-webkit-scrollbar {
+.language-python::-webkit-scrollbar,
+.language-java::-webkit-scrollbar,
+.language-javascript::-webkit-scrollbar,
+.language-js::-webkit-scrollbar,
+.language-sql::-webkit-scrollbar {
   /*滚动条整体样式*/
   width: 5px; /*高宽分别对应横竖滚动条的尺寸*/
   height: 10px;
 }
-.language-python::-webkit-scrollbar-thumb {
+.language-python::-webkit-scrollbar-thumb,
+.language-java::-webkit-scrollbar-thumb,
+.language-javascript::-webkit-scrollbar-thumb,
+.language-js::-webkit-scrollbar-thumb,
+.language-sql::-webkit-scrollbar-thumb {
   /*滚动条里面小方块*/
   border-radius: 10px;
   /* background-color: #1da1f2; */
@@ -98,7 +106,11 @@ body::-webkit-scrollbar-track {
     transparent
   ); */
 }
-.language-python::-webkit-scrollbar-track {
+.language-python::-webkit-scrollbar-track,
+.language-js::-webkit-scrollbar-track,
+.language-java::-webkit-scrollbar-track,
+.language-javascript::-webkit-scrollbar-track,
+.language-sql::-webkit-scrollbar-track {
   /*滚动条里面轨道*/
   box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
   background: #ededed;

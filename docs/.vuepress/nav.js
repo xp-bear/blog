@@ -9,7 +9,7 @@ module.exports = [
     items: [
       // { text: "HTML5学习", link: "/front/zero/" },
       { text: "django学习", link: "/front/zero/" },
-      { text: "MySQL教程", link: "/front/zero/" },
+      { text: "MySQL教程", link: "/front/mysql/" },
       {
         text: "CSS3进阶",
         link: "/baodian/high/",

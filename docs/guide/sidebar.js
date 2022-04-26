@@ -5,7 +5,7 @@ module.exports = [
     children: ["/guide/notes/one"],
   },
   {
-    title: "知码学院",
+    title: "熊仔资料",
     collapsable: true,
     children: ["/guide/notes/two", "/guide/notes/three"],
   },

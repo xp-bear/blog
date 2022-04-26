@@ -25,7 +25,7 @@ module.exports = {
       },
     },
     editLinks: true,
-    editLinkText: "在 GitHub 上编辑此页 !",
+    editLinkText: "在 GitHub 上编辑此页!",
   },
   plugins: [
     [
@@ -44,7 +44,8 @@ module.exports = {
           // 不要忘了安装 moment
           const moment = require("moment");
           moment.locale(lang);
-          return moment(timestamp).fromNow();
+          // return moment(timestamp).fromNow();
+          return moment(timestamp).format("YYYY年MM月DD日 HH:mm");
         },
         dateOptions: {
           hour12: false,
