@@ -4,20 +4,62 @@ module.exports = [
     link: "/guide/",
   },
   {
-    text: "前端",
-    // link: "/baodian/",
+    text: "前端教程",
     items: [
-      // { text: "HTML5学习", link: "/front/zero/" },
-      { text: "django学习", link: "/front/zero/" },
-      { text: "MySQL教程", link: "/front/mysql/" },
       {
-        text: "CSS3进阶",
+        text: "HTML5系列",
+        items: [
+          { text: "django学习", link: "/front/zero/" },
+          { text: "MySQL教程", link: "/front/mysql/" },
+        ],
+      },
+      {
+        text: "CSS3系列",
         link: "/baodian/high/",
         items: [
           { text: "阿里云", link: "https://www.aliyun.com/" },
           { text: "腾讯云", link: "https://cloud.tencent.com/" },
         ],
       },
+      {
+        text: "JavaScript系列",
+        link: "/baodian/high/",
+        items: [
+          { text: "阿里云", link: "https://www.aliyun.com/" },
+          { text: "腾讯云", link: "https://cloud.tencent.com/" },
+        ],
+      },
+      {
+        text: "node.js系列",
+        link: "/baodian/high/",
+        items: [
+          { text: "阿里云", link: "https://www.aliyun.com/" },
+          { text: "腾讯云", link: "https://cloud.tencent.com/" },
+        ],
+      },
+      {
+        text: "vue系列",
+        link: "/baodian/high/",
+        items: [
+          { text: "阿里云", link: "https://www.aliyun.com/" },
+          { text: "腾讯云", link: "https://cloud.tencent.com/" },
+        ],
+      },
+      {
+        text: "react系列",
+        link: "/baodian/high/",
+        items: [
+          { text: "阿里云", link: "https://www.aliyun.com/" },
+          { text: "腾讯云", link: "https://cloud.tencent.com/" },
+        ],
+      },
+    ],
+  },
+  {
+    text: "随笔记录",
+    items: [
+      { text: "初级开发篇", link: "/baodian/zero/" },
+      { text: "中高进阶篇", link: "/baodian/high/" },
     ],
   },
   {
@@ -28,7 +70,6 @@ module.exports = [
       { text: "中高进阶篇", link: "/baodian/high/" },
     ],
   },
-
   {
     text: "工具箱",
     items: [

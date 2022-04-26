@@ -1,1 +1,1 @@
-guide 下面的 README.md
+![](http://mk.xxoutman.cn/img/logo.gif)
