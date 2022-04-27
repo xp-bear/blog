@@ -86,7 +86,8 @@ body::-webkit-scrollbar-track {
   border-radius: 10px;
   /* background-color: #fb413f; */
   /* background: linear-gradient(to top, #11998e, #38ef7d); */
-  background: linear-gradient(to top, #8e2de2, #4a00e0);
+  /* background: linear-gradient(to top, #8e2de2, #4a00e0); */
+  background: linear-gradient(to top, #7f7fd5, #86a8e7, #91eae4);
   /* background-image: -webkit-linear-gradient(
     45deg,
     rgba(255, 255, 255, 0.2) 25%,
