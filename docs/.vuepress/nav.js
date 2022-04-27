@@ -9,13 +9,12 @@ module.exports = [
       {
         text: "HTML5系列",
         items: [
-          { text: "django学习", link: "/front/zero/" },
-          { text: "MySQL教程", link: "/front/mysql/" },
+          { text: "阿里云", link: "https://www.aliyun.com/" },
+          { text: "腾讯云", link: "https://cloud.tencent.com/" },
         ],
       },
       {
         text: "CSS3系列",
-        link: "/baodian/high/",
         items: [
           { text: "阿里云", link: "https://www.aliyun.com/" },
           { text: "腾讯云", link: "https://cloud.tencent.com/" },
@@ -23,74 +22,95 @@ module.exports = [
       },
       {
         text: "JavaScript系列",
-        link: "/baodian/high/",
         items: [
           { text: "阿里云", link: "https://www.aliyun.com/" },
           { text: "腾讯云", link: "https://cloud.tencent.com/" },
+        ],
+      },
+      {
+        text: "数据库系列",
+        items: [
+          { text: "MySQL", link: "/database/mysql/" },
+          { text: "MongoDB", link: "https://cloud.tencent.com/" },
         ],
       },
       {
         text: "node.js系列",
-        link: "/baodian/high/",
         items: [
           { text: "阿里云", link: "https://www.aliyun.com/" },
           { text: "腾讯云", link: "https://cloud.tencent.com/" },
         ],
       },
       {
-        text: "vue系列",
-        link: "/baodian/high/",
+        text: "vue+ts系列",
         items: [
-          { text: "阿里云", link: "https://www.aliyun.com/" },
+          { text: "vue+ts笔记", link: "/vue/basic/" },
           { text: "腾讯云", link: "https://cloud.tencent.com/" },
         ],
       },
       {
         text: "react系列",
-        link: "/baodian/high/",
         items: [
           { text: "阿里云", link: "https://www.aliyun.com/" },
           { text: "腾讯云", link: "https://cloud.tencent.com/" },
         ],
       },
+      {
+        text: "flutter系列",
+        items: [
+          { text: "阿里云", link: "https://www.aliyun.com/" },
+          { text: "腾讯云", link: "https://cloud.tencent.com/" },
+        ],
+      },
+      {
+        text: "微信小程序系列",
+        items: [
+          { text: "阿里云", link: "https://www.aliyun.com/" },
+          { text: "腾讯云", link: "https://cloud.tencent.com/" },
+        ],
+      },
+    ],
+  },
+  {
+    text: "Python教程",
+    items: [
+      { text: "阿里云", link: "https://www.aliyun.com/" },
+      { text: "django笔记", link: "/python/django/" },
+    ],
+  },
+  {
+    text: "java教程",
+    items: [
+      { text: "阿里云", link: "https://www.aliyun.com/" },
+      { text: "腾讯云", link: "https://cloud.tencent.com/" },
+    ],
+  },
+  {
+    text: "计算机网络",
+    items: [
+      { text: "阿里云", link: "https://www.aliyun.com/" },
+      { text: "腾讯云", link: "https://cloud.tencent.com/" },
+    ],
+  },
+  {
+    text: "数据结构与算法",
+    items: [
+      { text: "阿里云", link: "https://www.aliyun.com/" },
+      { text: "腾讯云", link: "https://cloud.tencent.com/" },
     ],
   },
   {
     text: "随笔记录",
     items: [
-      { text: "初级开发篇", link: "/baodian/zero/" },
-      { text: "中高进阶篇", link: "/baodian/high/" },
+      { text: "阿里云", link: "https://www.aliyun.com/" },
+      { text: "腾讯云", link: "https://cloud.tencent.com/" },
     ],
   },
   {
     text: "面试宝典",
-    // link: "/baodian/",
     items: [
-      { text: "初级开发篇", link: "/baodian/zero/" },
-      { text: "中高进阶篇", link: "/baodian/high/" },
-    ],
-  },
-  {
-    text: "工具箱",
-    items: [
-      {
-        text: "在线编辑",
-        items: [{ text: "图片压缩", link: "https://tinypng.com/" }],
-      },
-      {
-        text: "在线服务",
-        items: [
-          { text: "阿里云", link: "https://www.aliyun.com/" },
-          { text: "腾讯云", link: "https://cloud.tencent.com/" },
-        ],
-      },
-      {
-        text: "博客指南",
-        items: [
-          { text: "掘金", link: "https://juejin.im/" },
-          { text: "CSDN", link: "https://blog.csdn.net/" },
-        ],
-      },
+      { text: "阿里云", link: "https://www.aliyun.com/" },
+      { text: "腾讯云", link: "https://cloud.tencent.com/" },
     ],
   },
 ];

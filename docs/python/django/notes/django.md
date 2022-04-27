@@ -1,4 +1,6 @@
-# 2.1 Django框架介绍与安装
+# Django框架介绍与安装
+
+## 2.1 Django框架介绍与安装
 
 ## (1). Web开发介绍：
 
@@ -97,7 +99,7 @@ python -m django --version
 # 指定安装包安装：pip install Django-2.2.13-py2.py3-none-any.whl
 ```
 
-# 2.2 Django的快速入门
+## 2.2 Django的快速入门
 
 ## 第一部分：创建与使用
 
@@ -669,7 +671,7 @@ class StuAdmin(admin.ModelAdmin):
     #list_editable = ['age','sex','classid']
 ```
 
-# 2.3 Django的URL路由（URL配置）
+## 2.3 Django的URL路由（URL配置）
 
 > 一个`干净优雅`的`URL方案`是`高质量Web应用`程序中的一个`重要细节`。
 >
@@ -955,7 +957,7 @@ def index(request):
  path("articles/", views.redirect_to_year, name="redirect_to_year"),  # url反向解析
 ```
 
-# 2.4 Django的模型层
+## 2.4 Django的模型层
 
 ## Model模型
 
@@ -1775,7 +1777,7 @@ urlpatterns = [
 </html>
 ```
 
-# 2.5 Django的视图层
+## 2.5 Django的视图层
 
 ## Django的视图层(View)
 
@@ -2143,7 +2145,7 @@ def verifycode(request):
 <img id='verifycode' src="{% url 'resp08' %}" alt="CheckCode"/>
 ```
 
-# 2.6 Django的模板层
+## 2.6 Django的模板层
 
 ## Template模板
 
