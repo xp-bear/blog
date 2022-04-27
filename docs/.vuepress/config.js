@@ -6,8 +6,11 @@ module.exports = {
   head: [
     ["link", { rel: "icon", href: "/img/favicon.ico" }],
     ["link", { rel: "stylesheet", href: "/css/style.css" }],
-    ["script", { charset: "utf-8", src: "/js/canvas-particle.js" }], //新加入
-    ["script", { charset: "utf-8", src: "/js/main.js" }], //新加入
+    ["script", { charset: "utf-8", src: "/js/canvas-particle.js" }],
+    ["script", { charset: "utf-8", src: "/js/main.js" }],
+    ["script", { src: "/js/jquery3.3.js" }],
+    ["script", { src: "/js/fancybox.js" }],
+    ["link", { rel: "stylesheet", type: "text/css", href: "/css/fancybox.css" }],
   ],
   markdown: {
     lineNumbers: true,
