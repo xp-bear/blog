@@ -169,9 +169,9 @@ if __name__ == '__main__':
 
 
 
-![flask-restful-post](http://mk.xxoutman.cn/flask/59a37ac144fbbd22.png)
+<a data-fancybox title="flask-restful-post" href="http://mk.xxoutman.cn/flask/59a37ac144fbbd22.png">![flask-restful-post](http://mk.xxoutman.cn/flask/59a37ac144fbbd22.png)</a>
 
-![flask-restful-delete](http://mk.xxoutman.cn/flask/3f32ddabdba3ba9e.png)
+<a data-fancybox title="flask-restful-delete" href="http://mk.xxoutman.cn/flask/3f32ddabdba3ba9e.png">![flask-restful-delete](http://mk.xxoutman.cn/flask/3f32ddabdba3ba9e.png)</a>
 
 #### GET方法中如何获取参数
 
@@ -189,7 +189,7 @@ api.add_resource(UserId, '/user/<userid>',endpoint='userid')
 
 在`api.add_resource()`方法中，第二个参数`/user/<userid>`中的`<userid>`，就是用户传递过来的参数，这点写法上跟`flask`路由的写法是一模一样的。程序启动后，访问 `http://127.0.0.1:5001/user/0` 获取的就是`USERS`列表中第一个用户的信息。
 
-![flask-restful-get-param](http://mk.xxoutman.cn/flask/67654e4fb6e58040.png)
+<a data-fancybox title="flask-restful-get-param" href="http://mk.xxoutman.cn/flask/67654e4fb6e58040.png">![flask-restful-get-param](http://mk.xxoutman.cn/flask/67654e4fb6e58040.png)</a>
 
 在flask-restful中添加日志,先来看一下示例
 
@@ -292,4 +292,4 @@ app.run(host='0.0.0.0', port=5001, use_reloader=True)
 
 我们使用上次用到的`dictConfig`，主要的区别在于`api.add_resource()`方法中，使用了参数`resource_class_kwargs`，然后在`Resource`子类中的构造函数`__init__`，将日志记录器获取到，后面就可以在各个处理方法中使用了。再次使用`postman`发起`POST`请求，可以看到`debug.log`是这个样子的
 
-![flask-restful-logging](http://mk.xxoutman.cn/flask/807c773888c3a3ac.png)
+<a data-fancybox title="flask-restful-logging" href="http://mk.xxoutman.cn/flask/807c773888c3a3ac.png">![flask-restful-logging](http://mk.xxoutman.cn/flask/807c773888c3a3ac.png)</a>

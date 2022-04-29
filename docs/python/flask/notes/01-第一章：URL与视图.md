@@ -1,16 +1,16 @@
 # Flask简介：
 
-![1644595390445](http://mk.xxoutman.cn/flask/1644595390445.png)
+<a data-fancybox title="1644595390445" href="http://mk.xxoutman.cn/flask/1644595390445.png">![1644595390445](http://mk.xxoutman.cn/flask/1644595390445.png)</a>
 
 `django`与`flask`的对比:
 
-![1644628746832](http://mk.xxoutman.cn/flask/1644628746832.png)
+<a data-fancybox title="1644628746832" href="http://mk.xxoutman.cn/flask/1644628746832.png">![1644628746832](http://mk.xxoutman.cn/flask/1644628746832.png)</a>
 
-![1644628760892](http://mk.xxoutman.cn/flask/1644628760892.png)
+<a data-fancybox title="1644628760892" href="http://mk.xxoutman.cn/flask/1644628760892.png">![1644628760892](http://mk.xxoutman.cn/flask/1644628760892.png)</a>
 
-![1644629018250](http://mk.xxoutman.cn/flask/1644629018250.png)
+<a data-fancybox title="1644629018250" href="http://mk.xxoutman.cn/flask/1644629018250.png">![1644629018250](http://mk.xxoutman.cn/flask/1644629018250.png)</a>
 
-![1644629049802](http://mk.xxoutman.cn/flask/1644629049802.png)
+<a data-fancybox title="1644629049802" href="http://mk.xxoutman.cn/flask/1644629049802.png">![1644629049802](http://mk.xxoutman.cn/flask/1644629049802.png)</a>
 
 ## 二者之间的差别
 
@@ -42,7 +42,7 @@ flask官网地址: https://dormousehole.readthedocs.io/en/latest/
 
 用`pycharm`新建一个`flask`项目，新建项目的截图如下：
 
-![1644595456027](http://mk.xxoutman.cn/flask/1644595456027.png)
+<a data-fancybox title="1644595456027" href="http://mk.xxoutman.cn/flask/1644595456027.png">![1644595456027](http://mk.xxoutman.cn/flask/1644595456027.png)</a>
 
 点击`create`后创建一个新项目，然后在`app.py`文件中书写代码：
 
@@ -81,7 +81,7 @@ if __name__ == '__main__':
 
 默认情况下`flask`不会开启`DEBUG`模式，开启`DEBUG`模式后，flask会在每次保存代码的时候自动的重新载入代码，并且如果代码有错误，会在终端进行提示。
 
-![1644595594676](http://mk.xxoutman.cn/flask/1644595594676.png)
+<a data-fancybox title="1644595594676" href="http://mk.xxoutman.cn/flask/1644595594676.png">![1644595594676](http://mk.xxoutman.cn/flask/1644595594676.png)</a>
 
 如果一切正常，会在终端打印以下信息：
 

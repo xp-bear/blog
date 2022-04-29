@@ -412,7 +412,7 @@ CSRF（Cross-site request forgery），也被称为：one click attack/session r
 
 如下：
 
-​        ![img](assets/31690c9f894def1d03290185d242125d.png)
+​        <a data-fancybox title="img" href="assets/31690c9f894def1d03290185d242125d.png">![img](assets/31690c9f894def1d03290185d242125d.png)</a>
 
 其中Web A为存在CSRF漏洞的网站，Web B为攻击者构建的恶意网站，User C为Web A网站的合法用户。
 CSRF攻击攻击原理及过程如下：
