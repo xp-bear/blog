@@ -4,10 +4,16 @@ module.exports = {
   dest: "./dist", //默认在.vuepress目录下
   port: "7777",
   head: [
+    ["meta", { name: "keywords", content: "熊仔笔记,想走过亚洲的熊" }],
+    ["meta", { name: "baidu-site-verification", content: "code-nuyZxH5QdZ" }],
+    ["meta", { name: "wlhlauth", content: "076e7e2b75875b4e0523733b107713ec" }],
     ["link", { rel: "icon", href: "/img/favicon.ico" }],
     ["link", { rel: "stylesheet", href: "/css/style.css" }],
-    ["script", { charset: "utf-8", src: "/js/canvas-particle.js" }], //新加入
-    ["script", { charset: "utf-8", src: "/js/main.js" }], //新加入
+    ["script", { charset: "utf-8", src: "/js/canvas-particle.js" }],
+    ["script", { charset: "utf-8", src: "/js/main.js" }],
+    ["script", { src: "/js/jquery3.3.js" }],
+    ["script", { src: "/js/fancybox.js" }],
+    ["link", { rel: "stylesheet", type: "text/css", href: "/css/fancybox.css" }],
   ],
   markdown: {
     lineNumbers: true,

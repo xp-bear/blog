@@ -1,12 +1,12 @@
-# Django框架介绍与安装
+# Django 框架介绍与安装
 
-## 2.1 Django框架介绍与安装
+## 2.1 Django 框架介绍与安装
 
-## (1). Web开发介绍：
+## (1). Web 开发介绍：
 
-- 目前Web开发属于Browser/Server模式，简称B/S架构，开发语言有（Python、PHP、Java 、node.js ...）。
-- 基于Python的Web工作原理如下：
-- ![img](http://mk.xxoutman.cn/img/webjg.png)
+- 目前 Web 开发属于 Browser/Server 模式，简称 B/S 架构，开发语言有（Python、PHP、Java 、node.js ...）。
+- 基于 Python 的 Web 工作原理如下：
+- <a data-fancybox title="xx" href="http://mk.xxoutman.cn/img/webjg.png" rel="external nofollow" >![img](http://mk.xxoutman.cn/img/webjg.png)</a>
 
 ## (2). 框架介绍：
 
@@ -23,71 +23,71 @@
 - 成熟,稳健
 - 易扩展、易维护
 
-#### ③. Python中常见的框架
+#### ③. Python 中常见的框架
 
-- 大包大揽 Django 被官方称之为完美主义者的Web框架。
-- 力求精简 web.py和Tornado
-- 新生代微框架 Flask和Bottle
+- 大包大揽 Django 被官方称之为完美主义者的 Web 框架。
+- 力求精简 web.py 和 Tornado
+- 新生代微框架 Flask 和 Bottle
 
-#### ④. Web框架中的一些概念
+#### ④. Web 框架中的一些概念
 
 - MVC
-  - 大部分开发语言中都有MVC框架
-  - MVC框架的核心思想是：解耦
+  - 大部分开发语言中都有 MVC 框架
+  - MVC 框架的核心思想是：解耦
   - 降低各功能模块之间的耦合性，方便变更，更容易重构代码，最大程度上实现代码的重用
-  - m表示model，主要用于对数据库层的封装
-  - v表示view，用于向用户展示结果
-  - c表示controller，是核心，用于处理请求、获取数据、返回结果
+  - m 表示 model，主要用于对数据库层的封装
+  - v 表示 view，用于向用户展示结果
+  - c 表示 controller，是核心，用于处理请求、获取数据、返回结果
 - MVT
-  - Django是一款python的web开发框架
-  - 与MVC有所不同，属于MVT框架
-  - m表示model，负责与数据库交互
-  - v表示view，是核心，负责接收请求、获取数据、返回结果
-  - t表示template，负责呈现内容到浏览器
+  - Django 是一款 python 的 web 开发框架
+  - 与 MVC 有所不同，属于 MVT 框架
+  - m 表示 model，负责与数据库交互
+  - v 表示 view，是核心，负责接收请求、获取数据、返回结果
+  - t 表示 template，负责呈现内容到浏览器
 
-## (3). Django框架介绍
+## (3). Django 框架介绍
 
-- Django是一个高级的Python Web框架，它鼓励快速开发和清洁，务实的设计。
+- Django 是一个高级的 Python Web 框架，它鼓励快速开发和清洁，务实的设计。
 
-- 由经验丰富的开发人员构建，它负责Web开发的许多麻烦，因此您可以专注于编写应用程序，而无需重新创建轮子。
+- 由经验丰富的开发人员构建，它负责 Web 开发的许多麻烦，因此您可以专注于编写应用程序，而无需重新创建轮子。
 
 - 它是免费的和开源的。
 
-- 被官方称之为完美主义者的Web框架。
+- 被官方称之为完美主义者的 Web 框架。
 
-- Django可以更快地构建更好的Web应用程序并减少代码。
+- Django 可以更快地构建更好的 Web 应用程序并减少代码。
 
   官方网址：https://www.djangoproject.com/
 
-#### ① Django框架的特点：
+#### ① Django 框架的特点：
 
-- 快速开发：Django的宗旨在于帮助开发人员快速从概念到完成应用程序。
-- 安全可靠：Django认真对待安全性，帮助开发人员避免许多常见的安全错误。
-- 超可伸缩性：Web上的一些最繁忙的网站利用了Django快速灵活扩展的能力。
+- 快速开发：Django 的宗旨在于帮助开发人员快速从概念到完成应用程序。
+- 安全可靠：Django 认真对待安全性，帮助开发人员避免许多常见的安全错误。
+- 超可伸缩性：Web 上的一些最繁忙的网站利用了 Django 快速灵活扩展的能力。
 
-#### ② Django可以使用什么Python版本？
+#### ② Django 可以使用什么 Python 版本？
 
-| Django版本    | Python版本                          |
-| :------------ | :---------------------------------- |
-| 2.2           | 3.5、3.6、3.7、3.8（在2.2.8中添加） |
-| 3.0、3.1、3.2 | 3.6、3.7、3.8                       |
+| Django 版本   | Python 版本                           |
+| :------------ | :------------------------------------ |
+| 2.2           | 3.5、3.6、3.7、3.8（在 2.2.8 中添加） |
+| 3.0、3.1、3.2 | 3.6、3.7、3.8                         |
 
-- Django的开发版本
+- Django 的开发版本
 
-![img](http://mk.xxoutman.cn/img/release-roadmap.e844db08610e.png)
+<a data-fancybox title="img" href="http://mk.xxoutman.cn/img/release-roadmap.e844db08610e.png">![img](http://mk.xxoutman.cn/img/release-roadmap.e844db08610e.png)</a>
 
-![img](http://mk.xxoutman.cn/img/22.png)
+<a data-fancybox title="img" href="http://mk.xxoutman.cn/img/22.png">![img](http://mk.xxoutman.cn/img/22.png)</a>
 
-## (4). Django的安装
+## (4). Django 的安装
 
-- 作为Python Web框架，Django需要Python，在安装Python同时需要安装pip。
+- 作为 Python Web 框架，Django 需要 Python，在安装 Python 同时需要安装 pip。
 
 ```python
 在线安装Django,指定版本安装，目前2.2的最新版为2.2.24
 
-pip install django==2.2.*  
+pip install django==2.2.*
 
-# 默认会安装：Django==2.2.24、sqlparse==0.3.1 和 pytz==2020.1  
+# 默认会安装：Django==2.2.24、sqlparse==0.3.1 和 pytz==2020.1
 
 检测当前是否安装Django及版本
 
@@ -99,25 +99,25 @@ python -m django --version
 # 指定安装包安装：pip install Django-2.2.13-py2.py3-none-any.whl
 ```
 
-## 2.2 Django的快速入门
+## 2.2 Django 的快速入门
 
 ## 第一部分：创建与使用
 
 ### (1). 创建项目
 
-如果这是你第一次使用Django，那么你必须要照顾一些初始设置。也就是说，您需要自动生成一些建立Django 项目的代码
+如果这是你第一次使用 Django，那么你必须要照顾一些初始设置。也就是说，您需要自动生成一些建立 Django 项目的代码
 
-从命令行cd到您要存储代码的目录，然后运行以下命令：
+从命令行 cd 到您要存储代码的目录，然后运行以下命令：
 
 ```python
 #创建一个django项目
-$ django-admin startproject mysite  
+$ django-admin startproject mysite
 ```
 
-我们来看看startproject创建的内容：
+我们来看看 startproject 创建的内容：
 
 ```python
-# 文件视图 
+# 文件视图
 ├── manage.py
 └── mysite
     ├── __init__.py
@@ -128,37 +128,37 @@ $ django-admin startproject mysite
 
 关于上面自动生成的目录与文件解释如下：
 
-- 外部mysite/根目录只是一个项目的容器。它的名字与Django无关; 您可以将其重命名为您喜欢的任何内容。
-- manage.py：一个命令行实用程序，可以让您以各种方式与此Django项目进行交互。你可以阅读所有的细节 manage.py在Django的管理和manage.py。
-- 内部mysite/目录是您的项目的实际Python包。==它的名字是您需要用来导入其中的任何内容的Python包名称==（例如mysite.urls）。
-- mysite/**init**.py：一个空的文件，告诉Python这个目录应该被认为是一个Python包。
-- mysite/settings.py：此Django项目的设置/配置。 Django设置会告诉你所有关于设置的工作原理。
-- mysite/urls.py：该Django项目的URL声明; 您的Django动力网站的“目录” (根路由)。
-- mysite/wsgi.py：WSGI兼容的Web服务器为您的项目提供服务的入口点(部署项目的文件)。
+- 外部 mysite/根目录只是一个项目的容器。它的名字与 Django 无关; 您可以将其重命名为您喜欢的任何内容。
+- manage.py：一个命令行实用程序，可以让您以各种方式与此 Django 项目进行交互。你可以阅读所有的细节 manage.py 在 Django 的管理和 manage.py。
+- 内部 mysite/目录是您的项目的实际 Python 包。==它的名字是您需要用来导入其中的任何内容的 Python 包名称==（例如 mysite.urls）。
+- mysite/**init**.py：一个空的文件，告诉 Python 这个目录应该被认为是一个 Python 包。
+- mysite/settings.py：此 Django 项目的设置/配置。 Django 设置会告诉你所有关于设置的工作原理。
+- mysite/urls.py：该 Django 项目的 URL 声明; 您的 Django 动力网站的“目录” (根路由)。
+- mysite/wsgi.py：WSGI 兼容的 Web 服务器为您的项目提供服务的入口点(部署项目的文件)。
 
 ### (2). 运行开发服务器
 
-我们来验证您的Django项目的作品。启动我们自己的django项目
+我们来验证您的 Django 项目的作品。启动我们自己的 django 项目
 
 ```python
 $ python manage.py runserver
 ```
 
-这是一个纯粹以Python编写的轻量级Web服务器。 我们将其与Django结合在一起，因此您可以快速开发，而无需处理配置生产服务器（如Apache），直到您准备好生产。
+这是一个纯粹以 Python 编写的轻量级 Web 服务器。 我们将其与 Django 结合在一起，因此您可以快速开发，而无需处理配置生产服务器（如 Apache），直到您准备好生产。
 
-默认情况下，该runserver命令在端口8000的内部IP上启动开发服务器。当然也可以指定端口开启服务,如8080端口：
+默认情况下，该 runserver 命令在端口 8000 的内部 IP 上启动开发服务器。当然也可以指定端口开启服务,如 8080 端口：
 
 ```python
 $ python manage.py runserver 8080
 ```
 
-如果要更改服务器的IP，请将其与端口一起传递。例如：
+如果要更改服务器的 IP，请将其与端口一起传递。例如：
 
 ```python
 $ python manage.py runserver 0.0.0.0:8000
 ```
 
-注意：通过IP访问后报如下错误：
+注意：通过 IP 访问后报如下错误：
 
 ```python
 DisallowedHost at /polls
@@ -167,9 +167,10 @@ Invalid HTTP_HOST header: '192.168.*.*:8000'. You may need to add '192.168.*.*' 
 HTTP_HOST标头无效：'192.168.*.*:8000'。您可能需要将“192.168.*.*”添加到ALLOWED_HOSTS
 如：ALLOWED_HOSTS = ['192.168.104.240'] 或：ALLOWED_HOSTS = ['*']
 ```
+
 ### (3). 创建一个应用程序
 
-Django自带一个实用程序，可以自动生成应用程序的基本目录结构，因此您可以专注于编写代码而不是创建目录。
+Django 自带一个实用程序，可以自动生成应用程序的基本目录结构，因此您可以专注于编写代码而不是创建目录。
 
 要==创建您的应用程序==，请确保您与目录位于同一目录，manage.py 并键入以下命令：
 
@@ -177,7 +178,7 @@ Django自带一个实用程序，可以自动生成应用程序的基本目录�
 $ python manage.py startapp polls
 ```
 
-这将创建一个目录polls，其目录如下：此目录结构将容纳轮询应用程序。
+这将创建一个目录 polls，其目录如下：此目录结构将容纳轮询应用程序。
 
 ```python
 # 文件视图
@@ -201,7 +202,7 @@ mysite/
 
 ### (4). 定义我们的第一个视图
 
-我们来写第一个视图。打开文件`polls/views.py` 并放入以下Python代码：
+我们来写第一个视图。打开文件`polls/views.py` 并放入以下 Python 代码：
 
 ```python
 from django.http import HttpResponse
@@ -210,9 +211,9 @@ def index(request):
     return HttpResponse("Hello, world. You're at the polls index.")
 ```
 
-这是Django中最简单的视图。要调用视图，我们需要将其映射到一个URL为此，我们需要一个URLconf。
+这是 Django 中最简单的视图。要调用视图，我们需要将其映射到一个 URL 为此，我们需要一个 URLconf。
 
-要在polls目录中创建一个URLconf，创建一个名为`urls.py`。您的应用目录应该如下所示：
+要在 polls 目录中创建一个 URLconf，创建一个名为`urls.py`。您的应用目录应该如下所示：
 
 ```python
 └── polls
@@ -239,11 +240,11 @@ urlpatterns = [
 ]
 ```
 
-下一步是将根URLconf指向polls.urls模块。 在 `mysite/urls.py`跟路由文件导入子路由文件,添加一条import用于django.urls.include和插入include()的urlpatterns列表，所以你必须：
+下一步是将根 URLconf 指向 polls.urls 模块。 在 `mysite/urls.py`跟路由文件导入子路由文件,添加一条 import 用于 django.urls.include 和插入 include()的 urlpatterns 列表，所以你必须：
 
 ```python
 from django.contrib import admin
-from django.urls import include,path 
+from django.urls import include,path
 
 urlpatterns = [
     #path('admin/', admin.site.urls),
@@ -251,32 +252,32 @@ urlpatterns = [
 ]
 ```
 
-其中include()函数允许引用其他URLconfs。请注意，该==include()函数的正则表达式 没有$（字符串匹配字符），而是尾部的斜杠/==。 每当Django遇到时 include()，它会排除与该点匹配的任何部分，并将剩余的字符串发送到随附的URLconf进行进一步处理。
+其中 include()函数允许引用其他 URLconfs。请注意，该==include()函数的正则表达式 没有$（字符串匹配字符），而是尾部的斜杠/==。 每当 Django 遇到时 include()，它会排除与该点匹配的任何部分，并将剩余的字符串发送到随附的 URLconf 进行进一步处理。
 
 ### 附录：path() 函数介绍
 
 Django path() 可以接收四个参数，分别是两个必选参数：`route`、`view` 和两个可选参数：`kwargs`、`name`，接下来详细介绍这四个参数。
 
-- `route` : 是包含URL模式的字符串。在处理请求时，会在urlpatterns 这个列表中依次向下寻找， 沿列表向下移动，将请求的URL与每个模式进行比较，直到找到匹配的URL。
+- `route` : 是包含 URL 模式的字符串。在处理请求时，会在 urlpatterns 这个列表中依次向下寻找， 沿列表向下移动，将请求的 URL 与每个模式进行比较，直到找到匹配的 URL。
 - `view`: 用于执行与正则表达式匹配的 URL 请求。
 - `kwargs`: 视图使用的字典类型的参数。
 - `name`: 用来反向获取 URL。
 
-## 第二部分：django完整项目体验
+## 第二部分：django 完整项目体验
 
 ### 第一步：项目的创建与运行
 
 #### (1). 创建项目
 
-如果这是你第一次使用Django，那么你必须要照顾一些初始设置。也就是说，您需要自动生成一些建立Django 项目的代码
+如果这是你第一次使用 Django，那么你必须要照顾一些初始设置。也就是说，您需要自动生成一些建立 Django 项目的代码
 
-从命令行cd到您要存储代码的目录，然后运行以下命令：
+从命令行 cd 到您要存储代码的目录，然后运行以下命令：
 
 ```python
 $ django-admin startproject myweb
 ```
 
-我们来看看startproject创建的内容：
+我们来看看 startproject 创建的内容：
 
 ```python
 # 文件视图
@@ -290,7 +291,7 @@ $ django-admin startproject myweb
 
 #### (2). 运行开发服务器
 
-我们来验证您的Django项目的作品。更改为外部myweb目录，如果您还没有，并运行以下命令：
+我们来验证您的 Django 项目的作品。更改为外部 myweb 目录，如果您还没有，并运行以下命令：
 
 ```python
 $ python manage.py runserver
@@ -300,7 +301,7 @@ $ python manage.py runserver
 
 #### (1). 创建一个应用程序
 
-Django自带一个实用程序，可以自动生成应用程序的基本目录结构，因此您可以专注于编写代码而不是创建目录。
+Django 自带一个实用程序，可以自动生成应用程序的基本目录结构，因此您可以专注于编写代码而不是创建目录。
 
 要创建您的应用程序，请确保您与目录位于同一目录，manage.py 并键入以下命令：
 
@@ -308,7 +309,7 @@ Django自带一个实用程序，可以自动生成应用程序的基本目录�
 $ python manage.py startapp myapp
 ```
 
-这将创建一个目录myapp，其目录如下：此目录结构将容纳轮询应用程序。
+这将创建一个目录 myapp，其目录如下：此目录结构将容纳轮询应用程序。
 
 ```python
 # 文件视图
@@ -332,7 +333,7 @@ myweb/
 
 #### (2). 编写我们的第一个视图
 
-我们来写第一个视图。打开文件`myapp/views.py` 并放入以下Python代码：
+我们来写第一个视图。打开文件`myapp/views.py` 并放入以下 Python 代码：
 
 ```python
 from django.http import HttpResponse
@@ -367,18 +368,18 @@ urlpatterns = [
 
 ### 第三步：项目的模型
 
-#### (1). 连接MySQL数据库设置
+#### (1). 连接 MySQL 数据库设置
 
-默认情况下，配置使用SQLite。若不使用SQLite作为数据库，则需要额外的设置，例如 USER，PASSWORD和HOST必须加入。
+默认情况下，配置使用 SQLite。若不使用 SQLite 作为数据库，则需要额外的设置，例如 USER，PASSWORD 和 HOST 必须加入。
 
-其中ENGINE设置为数据库后端使用。内置数据库后端有：
+其中 ENGINE 设置为数据库后端使用。内置数据库后端有：
 
 > - 'django.db.backends.postgresql'
 > - 'django.db.backends.mysql'
 > - 'django.db.backends.sqlite3'
 > - 'django.db.backends.oracle'
 
-在`myweb/settings.py`文件中，通过DATABASES项进行数据库设置
+在`myweb/settings.py`文件中，通过 DATABASES 项进行数据库设置
 
 ```python
 DATABASES = {
@@ -393,7 +394,7 @@ DATABASES = {
 }
 ```
 
-注意：Django使用MySQL数据库需要加载 MySQLdb模块，需要安装 mysqlclient
+注意：Django 使用 MySQL 数据库需要加载 MySQLdb 模块，需要安装 mysqlclient
 
 ```python
 $ pip install  mysqlclient
@@ -401,7 +402,7 @@ $ pip install  mysqlclient
 
 #### (2). 创建模型
 
-我们先在数据库里面创建stu这一个表
+我们先在数据库里面创建 stu 这一个表
 
 ```mysql
 CREATE TABLE `stu` (
@@ -414,7 +415,7 @@ CREATE TABLE `stu` (
 ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 ```
 
-然后在我们的简单的应用程序中，去创建一个stu表信息操作的Model类。编辑 `myapp/models.py`文件
+然后在我们的简单的应用程序中，去创建一个 stu 表信息操作的 Model 类。编辑 `myapp/models.py`文件
 
 ```python
 from django.db import models
@@ -438,12 +439,12 @@ class Stu(models.Model):
 
 #### (3). 激活模型
 
-要将该应用程序包括在我们的项目中，我们需要在设置中添加对其配置类的引用INSTALLED_APPS。
+要将该应用程序包括在我们的项目中，我们需要在设置中添加对其配置类的引用 INSTALLED_APPS。
 
 编辑`myweb/settings.py`文件
 
 ```python
-INSTALLED_APPS  =  [ 
+INSTALLED_APPS  =  [
     'django.contrib.admin' ，
     'django.contrib.auth' ，
     'django.contrib.contenttypes' ，
@@ -456,7 +457,7 @@ INSTALLED_APPS  =  [
 
 #### (4). 使用（两种）
 
-#### ① 进入交互式的Python shell
+#### ① 进入交互式的 Python shell
 
 ```python
 $ python manage.py shell
@@ -474,7 +475,7 @@ $ python manage.py shell
 3:wangwu:20:m:python03
 ```
 
-#### ② 在myapp应用的视图中使用
+#### ② 在 myapp 应用的视图中使用
 
 在`myapp/views.py` 文件中
 
@@ -497,7 +498,7 @@ def stu(request):
     return HttpResponse("ok")
 ```
 
-配置stu函数的访问路由，在`myapp/urls.py`文件中配置。
+配置 stu 函数的访问路由，在`myapp/urls.py`文件中配置。
 
 ```python
 path('stu/', views.stu),
@@ -505,13 +506,13 @@ path('stu/', views.stu),
 
 启动服务后，在浏览器中访问,在命令行终端中查看输出效果: http://localhost:8000/myapp/stu
 
-### 第四步：启用网站Admin管理
+### 第四步：启用网站 Admin 管理
 
 #### (1). 数据迁移
 
-Django框架中有一个非常强大的应用功能--自动管理界面，常被Web平台管理者使用，去管理整个Web平台。
+Django 框架中有一个非常强大的应用功能--自动管理界面，常被 Web 平台管理者使用，去管理整个 Web 平台。
 
-默认情况下，在settings.py配置文件中INSTALLED_APPS包含以下应用程序，这些应用程序都是由Django提供：
+默认情况下，在 settings.py 配置文件中 INSTALLED_APPS 包含以下应用程序，这些应用程序都是由 Django 提供：
 
 ```python
 django.contrib.admin - 管理网站。你会很快使用它。
@@ -524,7 +525,7 @@ django.contrib.staticfiles - 管理静态文件的框架。
 
 为了后续的开发，默认这些应用程序都是包含在里面的。
 
-使用这些Django自带的应用程序，需要我们==在数据库中创建一些数据表==对应，然后才能使用它们。为此，请运行以下命令（数据结构迁移）：
+使用这些 Django 自带的应用程序，需要我们==在数据库中创建一些数据表==对应，然后才能使用它们。为此，请运行以下命令（数据结构迁移）：
 
 ```python
 $ python manage.py migrate
@@ -561,7 +562,7 @@ Running migrations:
 | django_content_type        |
 | django_migrations          |
 | django_session             |
-| stu     
+| stu
 ```
 
 #### (2). 创建管理员用户
@@ -585,13 +586,13 @@ Superuser created successfully.
 
 #### (3). 启动开发服务器
 
-默认情况下，Django管理员站点被激活。让我们开始开发服务器并探索它。启动开发服务器命令如下：
+默认情况下，Django 管理员站点被激活。让我们开始开发服务器并探索它。启动开发服务器命令如下：
 
 ```python
 $ python manage.py runserver
 ```
 
-现在，打开一个Web浏览器，访问地址： http://127.0.0.1:8000/admin/
+现在，打开一个 Web 浏览器，访问地址： http://127.0.0.1:8000/admin/
 
 #### (4). 设置时区和语言：
 
@@ -621,7 +622,7 @@ admin.site.register(Stu)
 
 #### (6). 更深入设计后台管理
 
-编辑`myapp/models.py`文件，在Stu类中添加如下信息，让后台管理显示中文字段。
+编辑`myapp/models.py`文件，在 Stu 类中添加如下信息，让后台管理显示中文字段。
 
 ```python
 class Stu(models.Model):
@@ -640,7 +641,7 @@ class Stu(models.Model):
     # 自定义对应的表名，默认表名：myapp_stu
     class Meta:
         db_table="stu"
-        verbose_name = '浏览学生信息'  
+        verbose_name = '浏览学生信息'
         verbose_name_plural = '学生信息管理'
 ```
 
@@ -671,32 +672,32 @@ class StuAdmin(admin.ModelAdmin):
     #list_editable = ['age','sex','classid']
 ```
 
-## 2.3 Django的URL路由（URL配置）
+## 2.3 Django 的 URL 路由（URL 配置）
 
 > 一个`干净优雅`的`URL方案`是`高质量Web应用`程序中的一个`重要细节`。
 >
-> Django可以让你`自己设计URL`，无论你想要什么，没有框架限制。
+> Django 可以让你`自己设计URL`，无论你想要什么，没有框架限制。
 >
-> 为了给一个应用设计URL，你需要创建一个Python 模块，通常被称为`**URLconf**(URL configuration)`。
+> 为了给一个应用设计 URL，你需要创建一个 Python 模块，通常被称为`**URLconf**(URL configuration)`。
 >
-> 这个模块是纯Python代码，是一个简单的`Python模式`（简单的正则表达式）到`Python函数`（您的视图）之间的`映射`。
+> 这个模块是纯 Python 代码，是一个简单的`Python模式`（简单的正则表达式）到`Python函数`（您的视图）之间的`映射`。
 
-## (1). Django是如何处理一个请求?
+## (1). Django 是如何处理一个请求?
 
-当用户从Django的站点请求页面时，Django系统遵循以下步骤来执行的Python代码：
+当用户从 Django 的站点请求页面时，Django 系统遵循以下步骤来执行的 Python 代码：
 
-1. 首先Django确定要使用的根URLconf模块，通过`ROOT_URLCONF`来设置，具体在`settings.py`配置文件中。但是如果传入 `HttpRequest`对象具有`urlconf` 属性（由中间件设置），则其值将用于替换`ROOT\_URLCONF`设置。
-2. Django加载该Python模块并查找该变量 `urlpatterns`。它是`django.urls.path()` 或 `django.urls.re_path()`实例的序列(sequence)。
-3. **Django按顺序运行每个URL模式，并在匹配所请求的URL的第一个URL中停止**。
-4. 一旦正则表达式匹配，Django将导入并调用给定的视图，这是一个简单的Python函数（或基于类的视图）。该视图会获得如下参数：
+1. 首先 Django 确定要使用的根 URLconf 模块，通过`ROOT_URLCONF`来设置，具体在`settings.py`配置文件中。但是如果传入 `HttpRequest`对象具有`urlconf` 属性（由中间件设置），则其值将用于替换`ROOT\_URLCONF`设置。
+2. Django 加载该 Python 模块并查找该变量 `urlpatterns`。它是`django.urls.path()` 或 `django.urls.re_path()`实例的序列(sequence)。
+3. **Django 按顺序运行每个 URL 模式，并在匹配所请求的 URL 的第一个 URL 中停止**。
+4. 一旦正则表达式匹配，Django 将导入并调用给定的视图，这是一个简单的 Python 函数（或基于类的视图）。该视图会获得如下参数：
    - 一个`HttpRequest`实例。
    - 如果匹配的正则表达式没有返回任何命名组，那么来自正则表达式的匹配将作为位置参数提供。
-   - 关键字参数由正则表达式匹配的任何命名组组成，由可选kwargs参数中指定的任何参数覆盖。`django.urls.path\(\)`、`django.urls.re_path\(\)`。
-5. **如果没有正则表达式匹配，或者在此过程中的任何一点出现异常，Django将调用适当的错误处理视图。**
+   - 关键字参数由正则表达式匹配的任何命名组组成，由可选 kwargs 参数中指定的任何参数覆盖。`django.urls.path\(\)`、`django.urls.re_path\(\)`。
+5. **如果没有正则表达式匹配，或者在此过程中的任何一点出现异常，Django 将调用适当的错误处理视图。**
 
 #### 示例
 
-以下是一个URLconf示例: `urls.py`如下: 
+以下是一个 URLconf 示例: `urls.py`如下:
 
 ```python
 from django.urls import path
@@ -740,27 +741,27 @@ def article_detail(request, year=0, month=0, slug=""):
 
 说明：
 
-> - **要从URL捕获一个值，请使用尖括号括起来**。
+> - **要从 URL 捕获一个值，请使用尖括号括起来**。
 > - 捕获的值可以选择包括转换器类型。例如，用于 `<int:name>`捕获整数参数。如果不包括转换器`/`，则匹配除字符以外的任何字符串。
-> - 无需添加斜杠，因为每个URL都有该斜杠。例如`articles`，不是/`articles`。
+> - 无需添加斜杠，因为每个 URL 都有该斜杠。例如`articles`，不是/`articles`。
 
 #### 路径转换器
 
 - 默认情况下，以下路径转换器可用：
   - `str`-匹配任何非空字符串，但路径分隔符除外'/'。如果表达式中不包含转换器，则为默认设置。
-  - `int`-匹配零或任何正整数。返回一个int。
-  - `slug`-匹配由ASCII字母或数字以及连字符和下划线字符组成的任何条形字符串。例如， `building-your-1st-django-site`。
-  - `uuid`-匹配格式化的UUID。为防止多个URL映射到同一页面，必须包含破折号并且字母必须小写。例如，075194d3-6885-417e-a8a8-6c931e272f00。返回一个 UUID实例。
-  - `path`-匹配任何非空字符串，包括路径分隔符 '/'。这样，您就可以匹配完整的URL路径，而不是像一样匹配URL路径的一部分str。
+  - `int`-匹配零或任何正整数。返回一个 int。
+  - `slug`-匹配由 ASCII 字母或数字以及连字符和下划线字符组成的任何条形字符串。例如， `building-your-1st-django-site`。
+  - `uuid`-匹配格式化的 UUID。为防止多个 URL 映射到同一页面，必须包含破折号并且字母必须小写。例如，075194d3-6885-417e-a8a8-6c931e272f00。返回一个 UUID 实例。
+  - `path`-匹配任何非空字符串，包括路径分隔符 '/'。这样，您就可以匹配完整的 URL 路径，而不是像一样匹配 URL 路径的一部分 str。
 
 #### 通过浏览器访问服务
 
-> 注意：url路由，由上而下 进行匹配，如果在上面就匹配成功，则不会向下匹配
+> 注意：url 路由，由上而下 进行匹配，如果在上面就匹配成功，则不会向下匹配
 
 ```python
-# 通过浏览器访问服务的基本过程:   
-    127.0.0.1:8000/abc 
-        ==>  root url(根路由) 
+# 通过浏览器访问服务的基本过程:
+    127.0.0.1:8000/abc
+        ==>  root url(根路由)
         ==> 加载子路由（myweb/urls.py）
     	==> 正则匹配访问的路径(path) =-=> 视图函数(views.index)
     	==> views.py index() 响应内容
@@ -768,9 +769,9 @@ def article_detail(request, year=0, month=0, slug=""):
 
 #### 使用正则表达式:
 
-- 如果路径和转换器语法不足以定义URL模式，则还可以使用正则表达式。为此，请使用`re_path()`代替`path()`。
-- 在Python正则表达式中，命名正则表达式组的语法为`(?P<name>pattern)`,其中`name`是组的名称，并且 pattern是匹配的某种模式。
-- 这是前面的示例URLconf，使用正则表达式重写`urls.py`：
+- 如果路径和转换器语法不足以定义 URL 模式，则还可以使用正则表达式。为此，请使用`re_path()`代替`path()`。
+- 在 Python 正则表达式中，命名正则表达式组的语法为`(?P<name>pattern)`,其中`name`是组的名称，并且 pattern 是匹配的某种模式。
+- 这是前面的示例 URLconf，使用正则表达式重写`urls.py`：
 
 ```python
 from django.urls import path, re_path
@@ -787,14 +788,14 @@ urlpatterns = [
 '''
 []	匹配括号中的任意一个字符
 +	紧跟在它前面的单元,应匹配一次或多次
-\w	==	[a-zA-Z0-9] 数字字母下划线  
+\w	==	[a-zA-Z0-9] 数字字母下划线
 '''
 ```
 
 - 这可以完成与上一个示例大致相同的操作，除了：
-  - 将要匹配的确切URL受到更多限制。例如，年份10000将不再匹配，因为年份整数被限制为正好是四位数长。
+  - 将要匹配的确切 URL 受到更多限制。例如，年份 10000 将不再匹配，因为年份整数被限制为正好是四位数长。
   - 无论正则表达式进行哪种匹配，每个捕获的参数都将作为`字符串`发送到视图。
-- 当从使用切换为使用path()，re_path()反之亦然时，特别重要的是要注意视图参数的类型可能会更改，因此您可能需要调整视图。
+- 当从使用切换为使用 path()，re_path()反之亦然时，特别重要的是要注意视图参数的类型可能会更改，因此您可能需要调整视图。
 
 #### 使用未命名的正则表达式组(不推荐)
 
@@ -804,7 +805,7 @@ urlpatterns = [
 
 #### 为视图参数指定默认值
 
-- 一个方便的技巧是为视图的参数指定默认参数。这是一个示例URLconf和视图：
+- 一个方便的技巧是为视图的参数指定默认参数。这是一个示例 URLconf 和视图：
 
 ```python
 # urls.py
@@ -822,32 +823,32 @@ def page(request, num=1):
    	pass
 ```
 
-- 在上面的示例中，两个URL模式都指向同一视图`views.page`但是第一个模式未捕获URL中的任何内容。
-- 如果第一个模式匹配，该page()函数将使用它的默认参数`num=1`。
-- 如果第二个模式匹配， page()将使用num捕获的任何值。
+- 在上面的示例中，两个 URL 模式都指向同一视图`views.page`但是第一个模式未捕获 URL 中的任何内容。
+- 如果第一个模式匹配，该 page()函数将使用它的默认参数`num=1`。
+- 如果第二个模式匹配， page()将使用 num 捕获的任何值。
 
 ## (2). 错误处理
 
-> 当Django找不到与请求的URL匹配的正则表达式时，或者异常引发时，Django将调用错误处理视图。
+> 当 Django 找不到与请求的 URL 匹配的正则表达式时，或者异常引发时，Django 将调用错误处理视图。
 >
 > 用于这些情况的视图由四个变量指定。它们的默认值对于大多数项目都是足够的，但通过覆盖其默认值可以进一步定制。
 >
 > 有关详细信息，请参阅自定义错误视图的文档。
 >
-> 这样的值可以在你的根URLconf中设置。在任何其他URLconf中设置这些变量将不起作用。
+> 这样的值可以在你的根 URLconf 中设置。在任何其他 URLconf 中设置这些变量将不起作用。
 >
-> 值必须是可调用的，或者代表视图的完整的Python导入路径的字符串，应该被调用来处理手头的错误条件。
+> 值必须是可调用的，或者代表视图的完整的 Python 导入路径的字符串，应该被调用来处理手头的错误条件。
 
-#### 关于404错误
+#### 关于 404 错误
 
-- 404的错误页面，**在模板目录中创建一个404.html的页面**，
+- 404 的错误页面，**在模板目录中创建一个 404.html 的页面**，
 - 在配置文件中 **settings.py 配置 DEBUG = False**
 - 在配置文件中 **settings.py 配置 TEMPLATES = [{'DIRS': [os.path.join(BASE_DIR,'templates')] }]**
 - 同时需要在项目的根目录下创建文件夹`templates`，并且在此目录下创建一个`404.html`文件
-- 在出现404的情况时，==自动寻找==404页面。
-- 也可以在视图函数中 手动报出404错误，带提醒信息
+- 在出现 404 的情况时，==自动寻找==404 页面。
+- 也可以在视图函数中 手动报出 404 错误，带提醒信息
 
-在视图函数中也可以指定返回一个404
+在视图函数中也可以指定返回一个 404
 
 ```python
 注意 Http404需要在django.http的模块中引入
@@ -872,13 +873,13 @@ def page(request, num=1):
 </html>
 ```
 
-## (3). 包括其他的URLconf
+## (3). 包括其他的 URLconf
 
-> 在任何时候，您`urlpatterns`都可以“包含”其他URLconf模块。
+> 在任何时候，您`urlpatterns`都可以“包含”其他 URLconf 模块。
 >
 > 这实质上是将一组网址“植根于”其他网址之下
 
-例如，下面是[Django网站](https://www.djangoproject.com/)本身的URLconf的摘录。它包含许多其他URLconf：
+例如，下面是[Django 网站](https://www.djangoproject.com/)本身的 URLconf 的摘录。它包含许多其他 URLconf：
 
 ```python
 from django.urls import include, path
@@ -892,19 +893,19 @@ urlpatterns = [
 ]
 ```
 
-- 每当Django遇到时include()，它都会截断直到该时间点匹配的URL的任何部分，并将剩余的字符串发送到包含的URLconf中以进行进一步处理每当Django遇到`include()`（[`django.urls.include()`](https://docs.djangoproject.com/en/1.11/ref/urls/#django.conf.urls.include)）时，它会截断与该点匹配的URL的任何部分，并将剩余的字符串发送到包含的URLconf以供进一步处理。
+- 每当 Django 遇到时 include()，它都会截断直到该时间点匹配的 URL 的任何部分，并将剩余的字符串发送到包含的 URLconf 中以进行进一步处理每当 Django 遇到`include()`（[`django.urls.include()`](https://docs.djangoproject.com/en/1.11/ref/urls/#django.conf.urls.include)）时，它会截断与该点匹配的 URL 的任何部分，并将剩余的字符串发送到包含的 URLconf 以供进一步处理。
 
-## (4). URL的反向解析
+## (4). URL 的反向解析
 
-如果在视图、模板中使用硬编码的链接，**在URLconf发生改变时，维护是一件非常麻烦的事情**
+如果在视图、模板中使用硬编码的链接，**在 URLconf 发生改变时，维护是一件非常麻烦的事情**
 
-- 解决：在做链接时，通过指向URLconf的名称，==动态生成链接地址==
+- 解决：在做链接时，通过指向 URLconf 的名称，==动态生成链接地址==
 - 视图：使用**django.urls.reverse()**函数
-- 模板：使用url模板标签
+- 模板：使用 url 模板标签
 
 #### 示例
 
-- 在URLconf中
+- 在 URLconf 中
 
 ```python
 from django.urls import path
@@ -917,7 +918,7 @@ urlpatterns = [
 ]
 ```
 
-- 您可以使用以下HTML模板代码获取这些：
+- 您可以使用以下 HTML 模板代码获取这些：
 
 ```python
 <a href="{ %   url 'year_archive' 2020   % }">2020 Archive</a>
@@ -929,7 +930,7 @@ urlpatterns = [
 </ul>
 ```
 
-- 在Python代码中：
+- 在 Python 代码中：
 
 ```python
 from django.http import HttpResponseRedirect
@@ -957,50 +958,50 @@ def index(request):
  path("articles/", views.redirect_to_year, name="redirect_to_year"),  # url反向解析
 ```
 
-## 2.4 Django的模型层
+## 2.4 Django 的模型层
 
-## Model模型
+## Model 模型
 
 > 模型是你的数据的唯一的、权威的信息源。它包含你所储存数据的必要字段和行为。
 >
 > 通常，每个模型对应数据库中唯一的一张表。
 
-- 每个模型都是`django.db.models.Model`的一个Python 子类。
+- 每个模型都是`django.db.models.Model`的一个 Python 子类。
 - 模型的每个属性都表示为数据库中的一个字段。
-- Django 提供一套自动生成的用于数据库访问的API；
+- Django 提供一套自动生成的用于数据库访问的 API；
 - 这极大的减轻了开发人员的工作量，不需要面对因数据库变更而导致的无效劳。
 
 ## 模型与数据库的关系
 
 > **模型(Model)负责业务对象和数据库的关系映射(ORM)**
 
-ORM是“对象-关系-映射”的简称，主要任务是：
+ORM 是“对象-关系-映射”的简称，主要任务是：
 
 1. 根据对象的类型生成表结构
-2. 将对象、列表的操作，转换为sql语句
-3. 将sql查询到的结果转换为对象、列表
+2. 将对象、列表的操作，转换为 sql 语句
+3. 将 sql 查询到的结果转换为对象、列表
 
 ## 为什么要用模型?
 
-Model是MVC框架中重要的一部分,主要负责程序中用于处理数据逻辑的部分。通常模型对象负责在数据库中存取数据
+Model 是 MVC 框架中重要的一部分,主要负责程序中用于处理数据逻辑的部分。通常模型对象负责在数据库中存取数据
 
 它实现了数据模型与数据库的解耦，即数据模型的设计不需要依赖于特定的数据库，通过简单的配置就可以轻松更换数据库
 
-## 配置Mysql数据库
+## 配置 Mysql 数据库
 
-1，登录连接MySQL数据库，并创建数据库mytest。
+1，登录连接 MySQL 数据库，并创建数据库 mytest。
 
 ```python
 $ create databases mytest default charset=utf8
 ```
 
-2，在Django框架中使用MySQL数据库需要加载 MySQLdb模块，也就是需要安装 mysqlclient，若已经安装请略过。
+2，在 Django 框架中使用 MySQL 数据库需要加载 MySQLdb 模块，也就是需要安装 mysqlclient，若已经安装请略过。
 
 ```python
 $ pip install  mysqlclient
 ```
 
-3，在现有的Django项目中的配置数据库连接信息修改settings.py文件中的DATABASE配置项
+3，在现有的 Django 项目中的配置数据库连接信息修改 settings.py 文件中的 DATABASE 配置项
 
 ```python
 DATABASES = {
@@ -1022,19 +1023,19 @@ DATABASES = {
    ```python
    from django.db import models
    from datetime import datetime
-   
+
    class Users(models.Model):
       id = models.AutoField(primary_key=True)  # 主键可省略不写
       name = models.CharField(max_length=32)
       age = models.IntegerField(default=20)
       phone = models.CharField(max_length=16)
       addtime=models.DateTimeField(default=datetime.now)
-   
+
        #class Meta:
        #    db_table = "myapp_users"  # 指定表名，如果没有写，默认表名称: myapp_users。
    ```
 
-2. 编辑`myweb/settings.py`文件，并将项目应用文件名添加到该INSTALLED_APPS设置。
+2. 编辑`myweb/settings.py`文件，并将项目应用文件名添加到该 INSTALLED_APPS 设置。
 
 ```python
    INSTALLED_APPS = [
@@ -1048,7 +1049,7 @@ DATABASES = {
    ]
 ```
 
-3. 生成迁移文件 ( 相当于”生成sql语句脚本。)
+3. 生成迁移文件 ( 相当于”生成 sql 语句脚本。)
 
    ```python
    $ python manage.py makemigrations
@@ -1060,76 +1061,76 @@ DATABASES = {
    $ python manage.py migrate
    ```
 
-5. 使用模型类进行crud操作（具体详见②）
+5. 使用模型类进行 crud 操作（具体详见 ②）
 
-## ①定义模型
+## ① 定义模型
 
 - **在模型中定义属性，会生成表中的字段**
-- django根据属性的类型确定以下信息：
+- django 根据属性的类型确定以下信息：
   - 当前选择的数据库支持字段的类型
-  - 渲染管理表单时使用的默认html控件
+  - 渲染管理表单时使用的默认 html 控件
   - 在管理站点最低限度的验证
-- **django会为表增加自动增长的主键列**，每个模型只能有一个主键列，如果使用选项设置某属性为主键列后，则django不会再生成默认的主键列
+- **django 会为表增加自动增长的主键列**，每个模型只能有一个主键列，如果使用选项设置某属性为主键列后，则 django 不会再生成默认的主键列
 - 属性命名限制
-  - 不能是python的保留关键字
-  - ==由于django的查询方式，不允许使用连续的下划线==
+  - 不能是 python 的保留关键字
+  - ==由于 django 的查询方式，不允许使用连续的下划线==
 
 ### **定义属性**
 
 - 定义属性时，需要字段类型
-- 字段类型被定义在`django.db.models.fields`目录下，为了方便使用，被导入到django.db.models中
+- 字段类型被定义在`django.db.models.fields`目录下，为了方便使用，被导入到 django.db.models 中
 - 使用方式
-  1. 导入from django.db import models
-  2. 通过models.Field创建字段类型的对象，赋值给属性
-- **对于重要数据都做逻辑删除，不做物理删除，实现方法是定义isDelete属性，类型为BooleanField，默认值为False**
+  1. 导入 from django.db import models
+  2. 通过 models.Field 创建字段类型的对象，赋值给属性
+- **对于重要数据都做逻辑删除，不做物理删除，实现方法是定义 isDelete 属性，类型为 BooleanField，默认值为 False**
 
 ### 字段类型
 
 - AutoField
 
-  ：一个根据实际ID自动增长的IntegerField，通常不指定
+  ：一个根据实际 ID 自动增长的 IntegerField，通常不指定
 
   - 如果不指定，一个主键字段将自动添加到模型中
 
-- BooleanField：true/false 字段，此字段的默认表单控制是CheckboxInput
+- BooleanField：true/false 字段，此字段的默认表单控制是 CheckboxInput
 
-- NullBooleanField：支持null、true、false三种值
+- NullBooleanField：支持 null、true、false 三种值
 
 - **CharField**(max_length=字符长度)：字符串，默认的表单样式是 TextInput
 
-- **TextField**：大文本字段，一般超过4000使用，默认的表单控件是Textarea
+- **TextField**：大文本字段，一般超过 4000 使用，默认的表单控件是 Textarea
 
 - **IntegerField**：整数
 
-- DecimalField(max_digits=None, decimal_places=None)：使用python的Decimal实例表示的十进制浮点数
+- DecimalField(max_digits=None, decimal_places=None)：使用 python 的 Decimal 实例表示的十进制浮点数
 
   - DecimalField.max_digits：位数总数
   - DecimalField.decimal_places：小数点后的数字位数
 
-- **FloatField**：用Python的float实例来表示的浮点数
+- **FloatField**：用 Python 的 float 实例来表示的浮点数
 
-- DateField[auto_now=False, auto_now_add=False])：使用Python的datetime.date实例表示的日期
+- DateField[auto_now=False, auto_now_add=False])：使用 Python 的 datetime.date 实例表示的日期
 
-  - 参数DateField.auto_now：每次保存对象时，自动设置该字段为当前时间，用于"最后一次修改"的时间戳，它总是使用当前日期，默认为false
-  - 参数DateField.auto_now_add：当对象第一次被创建时自动设置当前时间，用于创建的时间戳，它总是使用当前日期，默认为false
-  - 该字段默认对应的表单控件是一个TextInput. 在管理员站点添加了一个JavaScript写的日历控件，和一个“Today"的快捷按钮，包含了一个额外的invalid_date错误消息键
+  - 参数 DateField.auto_now：每次保存对象时，自动设置该字段为当前时间，用于"最后一次修改"的时间戳，它总是使用当前日期，默认为 false
+  - 参数 DateField.auto_now_add：当对象第一次被创建时自动设置当前时间，用于创建的时间戳，它总是使用当前日期，默认为 false
+  - 该字段默认对应的表单控件是一个 TextInput. 在管理员站点添加了一个 JavaScript 写的日历控件，和一个“Today"的快捷按钮，包含了一个额外的 invalid_date 错误消息键
   - auto_now_add, auto_now, and default 这些设置是相互排斥的，他们之间的任何组合将会发生错误的结果
 
-- TimeField：使用Python的datetime.time实例表示的时间，参数同DateField
+- TimeField：使用 Python 的 datetime.time 实例表示的时间，参数同 DateField
 
-- **DateTimeField**：使用Python的datetime.datetime实例表示的日期和时间，参数同DateField
+- **DateTimeField**：使用 Python 的 datetime.datetime 实例表示的日期和时间，参数同 DateField
 
 - FileField：一个上传文件的字段
 
-- ImageField：继承了FileField的所有属性和方法，但对上传的对象进行校验，确保它是个有效的image
+- ImageField：继承了 FileField 的所有属性和方法，但对上传的对象进行校验，确保它是个有效的 image
 
 ### 字段选项
 
 - 通过字段选项，可以实现对字段的约束
 - 在字段对象时通过关键字参数指定
-- null：如果为True，Django 将空值以NULL 存储到数据库中，默认值是 False
-- blank：如果为True，则该字段允许为空白，默认值是 False
-- **对比：null是数据库范畴的概念，blank是表单验证证范畴的**
+- null：如果为 True，Django 将空值以 NULL 存储到数据库中，默认值是 False
+- blank：如果为 True，则该字段允许为空白，默认值是 False
+- **对比：null 是数据库范畴的概念，blank 是表单验证证范畴的**
 - db_column：字段的名称，如果未指定，则使用属性的名称
 - db_index：若值为 True, 则在表中会为此字段创建索引
 - default：默认值
@@ -1145,10 +1146,10 @@ DATABASES = {
 
 ### 元选项
 
-- 在模型类中定义类Meta，用于设置元信息
-- 元信息db_table：定义数据表名称，推荐使用小写字母，
-- 数据表的默认名称:<app_name>_<model_name>
-- 例如myweb_users
+- 在模型类中定义类 Meta，用于设置元信息
+- 元信息 db_table：定义数据表名称，推荐使用小写字母，
+- 数据表的默认名称:<app*name>*<model_name>
+- 例如 myweb_users
 - ordering：对象的默认排序字段，获取对象的列表时使用，接收属性构成的列表
 
 ```python
@@ -1169,13 +1170,13 @@ class BookInfo(models.Model):
 
 - 排序会增加数据库的开销
 
-## ②模型实例
+## ② 模型实例
 
 ### 1. 类的属性
 
-- `objects`：是Manager类型的对象，用于与数据库进行交互
+- `objects`：是 Manager 类型的对象，用于与数据库进行交互
 
-- 当定义模型类时没有指定管理器，则Django会为模型类提供一个名为objects的管理器
+- 当定义模型类时没有指定管理器，则 Django 会为模型类提供一个名为 objects 的管理器
 
 - 支持明确指定模型类的管理器
 
@@ -1185,42 +1186,43 @@ class BookInfo(models.Model):
     books = models.Manager()
   ```
 
-- 当为模型类指定管理器后，django不再为模型类生成名为objects的默认管理器
+- 当为模型类指定管理器后，django 不再为模型类生成名为 objects 的默认管理器
 
 ### 2. 创建对象
 
-- 当创建对象时，django不会对数据库进行读写操作
-- 调用save()方法才与数据库交互，将对象保存到数据库中
+- 当创建对象时，django 不会对数据库进行读写操作
+- 调用 save()方法才与数据库交互，将对象保存到数据库中
 - 使用关键字参数构造模型对象很麻烦，推荐使用下面的两种之式
-- 说明：*init*方法已经在基类models.Model中使用，在自定义模型中无法使用，
+- 说明：*init*方法已经在基类 models.Model 中使用，在自定义模型中无法使用，
 
 ### 3. 实例的属性
 
-- DoesNotExist：==在进行单个查询时，模型的对象不存在时会引发此异常，结合try/except使用==
+- DoesNotExist：==在进行单个查询时，模型的对象不存在时会引发此异常，结合 try/except 使用==
 
 ### 4. 实例的方法
 
-- `__str__(self)`：重写object方法，此方法在将对象转换成字符串时会被调用
+- `__str__(self)`：重写 object 方法，此方法在将对象转换成字符串时会被调用
 - save()：将模型对象保存到数据表中
 - delete()：将模型对象从数据表中删除
 
-## ③模型查询
+## ③ 模型查询
 
 - 查询集表示从数据库中获取的对象集合
 - 查询集可以含有零个、一个或多个过滤器
 - 过滤器基于所给的参数限制查询的结果
-- 从Sql的角度，查询集和select语句等价，过滤器像where和limit子句
+- 从 Sql 的角度，查询集和 select 语句等价，过滤器像 where 和 limit 子句
 - 接下来主要讨论如下知识点
   - 查询集
-  - 字段查询：比较运算符，F对象，Q对象
+  - 字段查询：比较运算符，F 对象，Q 对象
 
 ### 1. 查询集
 
 - 在管理器上调用过滤器方法会返回查询集
 - **查询集经过过滤器筛选后返回新的查询集，因此可以写成链式过滤**
 - **惰性执行：创建查询集不会带来任何数据库的访问，直到调用数据时，才会访问数据库**
-- 何时对查询集求值：迭代，序列化，与if合用
+- 何时对查询集求值：迭代，序列化，与 if 合用
 - **返回查询集的方法，称为过滤器**
+
   - all()
   - filter()
   - exclude()
@@ -1242,17 +1244,17 @@ class BookInfo(models.Model):
   - count()：返回当前查询的总条数
   - first()：返回第一个对象
   - last()：返回最后一个对象
-  - exists()：判断查询集中是否有数据，如果有则返回True
+  - exists()：判断查询集中是否有数据，如果有则返回 True
 
 ### 2.限制查询集
 
-- 查询集返回列表，可以使用下标的方式进行限制，等同于sql中的`limit`和`offset`子句
+- 查询集返回列表，可以使用下标的方式进行限制，等同于 sql 中的`limit`和`offset`子句
 
 - 注意：不支持负数索引
 
 - 使用下标后返回一个新的查询集，不会立即执行查询
 
-- 如果获取一个对象，直接使用[0]，等同于[0:1].get()，但是如果没有数据，[0]引发IndexError异常，[0:1].get()引发DoesNotExist异常
+- 如果获取一个对象，直接使用[0]，等同于[0:1].get()，但是如果没有数据，[0]引发 IndexError 异常，[0:1].get()引发 DoesNotExist 异常
 
   ```python
   #这会返回前5个对象 LIMIT 5
@@ -1265,7 +1267,7 @@ class BookInfo(models.Model):
 
 - 每个查询集都包含一个缓存来最小化对数据库的访问
 
-- 在新建的查询集中，缓存为空，首次对查询集求值时，会发生数据库查询，django会将查询的结果存在查询集的缓存中，并返回请求的结果，接下来对查询集求值将重用缓存的结果
+- 在新建的查询集中，缓存为空，首次对查询集求值时，会发生数据库查询，django 会将查询的结果存在查询集的缓存中，并返回请求的结果，接下来对查询集求值将重用缓存的结果
 
 - 情况一：**这构成了两个查询集，无法重用缓存，每次查询都会与数据库进行一次交互，增加了数据库的负载**
 
@@ -1286,11 +1288,11 @@ class BookInfo(models.Model):
 
 ### 4. 字段查询
 
-- 实现where子名，作为方法filter()、exclude()、get()的参数
-- 语法：属性名称__比较运算符=值
+- 实现 where 子名，作为方法 filter()、exclude()、get()的参数
+- 语法：属性名称\_\_比较运算符=值
 - 表示==两个下划线==，左侧是属性名称，右侧是比较类型
-- 对于外键，使用“属性名_id”表示外键的原始值
-- 转义：like语句中使用了%与，匹配数据中的%与，在过滤器中直接写，
+- 对于外键，使用“属性名\_id”表示外键的原始值
+- 转义：like 语句中使用了%与，匹配数据中的%与，在过滤器中直接写，
 - 例如：`filter(title__contains="%") ==> where title like '%\%%'`，表示查找标题中包含%的
 
 #### 比较运算符
@@ -1307,19 +1309,19 @@ class BookInfo(models.Model):
   exclude(btitle__contains='传')
   ```
 
-- startswith、endswith：以value开头或结尾，大小写敏感
+- startswith、endswith：以 value 开头或结尾，大小写敏感
 
   ```python
   exclude(btitle__endswith='传')
   ```
 
-- isnull、isnotnull：是否为null
+- isnull、isnotnull：是否为 null
 
   ```python
   filter(btitle__isnull=False)
   ```
 
-- 在前面加个i表示不区分大小写，如iexact、icontains、istarswith、iendswith
+- 在前面加个 i 表示不区分大小写，如 iexact、icontains、istarswith、iendswith
 
 - in：是否包含在范围内
 
@@ -1340,11 +1342,11 @@ class BookInfo(models.Model):
   filter(bpub_date__gt=date(1980, 12, 31))
   ```
 
-#### 跨关联关系的查询：处理join查询
+#### 跨关联关系的查询：处理 join 查询
 
 - 语法：模型类名 <属性名> <比较>
 
-- 注：可以没有__<比较>部分，表示等于，结果同inner、 join
+- 注：可以没有\_\_<比较>部分，表示等于，结果同 inner、 join
 
 - 可返向使用，即在关联的两个模型中都可以使用
 
@@ -1363,7 +1365,7 @@ class BookInfo(models.Model):
   maxDate = list.aggregate(Max('bpub_date'))
   ```
 
-- count的一般用法：
+- count 的一般用法：
 
   ```python
   count = list.count()
@@ -1425,9 +1427,9 @@ def index(request):
 
 ```
 
-## ④用户信息管理实战
+## ④ 用户信息管理实战
 
-新建一个项目 Project  `django-admin startproject Project`
+新建一个项目 Project `django-admin startproject Project`
 
 创建一个应用程序 User `python manage.py startapp User `
 
@@ -1437,11 +1439,11 @@ def index(request):
 
 ```python
 ALLOWED_HOSTS = ["*"] #允许所有的域名进行访问
-    
-INSTALLED_APPS=[ 
+
+INSTALLED_APPS=[
 	...
     User  #加载应用程序
-]    
+]
 "DIRS": [os.path.join(BASE_DIR, "templates")],  #配置模板的文件路径
     #数据库连接 需要自己创建一个User数据库
     "default": {
@@ -1468,9 +1470,9 @@ class User(models.Model):
 
 然后生成迁移文件`python manage.py makemigrations`
 
-执行迁移文件`python manage.py migrate`	 就会在数据库创建数据库表
+执行迁移文件`python manage.py migrate` 就会在数据库创建数据库表
 
-检测数据库是否可以正常使用,在User里面的`views.py`
+检测数据库是否可以正常使用,在 User 里面的`views.py`
 
 ```python
 from django.shortcuts import render
@@ -1573,7 +1575,7 @@ urlpatterns = [
 ]
 ```
 
-在`templates`里面创建一个文件夹`User`用于存放模板html文件
+在`templates`里面创建一个文件夹`User`用于存放模板 html 文件
 
 ### `index.html`
 
@@ -1661,7 +1663,7 @@ urlpatterns = [
     <hr />
     <h3>添加用户信息</h3>
     <form action="{% url 'insertUsers' %}" method="post">
-      {% csrf_token %} 
+      {% csrf_token %}
       <div class="form-group row">
         <label for="name" class="col-sm-2">性别: </label>
         <div class="col-sm-10">
@@ -1777,21 +1779,21 @@ urlpatterns = [
 </html>
 ```
 
-## 2.5 Django的视图层
+## 2.5 Django 的视图层
 
-## Django的视图层(View)
+## Django 的视图层(View)
 
-> Django框架中的视图（View）是用来负责处理用户请求和返回响应的逻辑程序
+> Django 框架中的视图（View）是用来负责处理用户请求和返回响应的逻辑程序
 >
-> 视图（View）简而言之就是一个Python的函数或方法，接受处理Web请求。
+> 视图（View）简而言之就是一个 Python 的函数或方法，接受处理 Web 请求。
 >
-> 视图的响应可以是网页的HTML内容，重定向或404错误，XML文档或图像。
+> 视图的响应可以是网页的 HTML 内容，重定向或 404 错误，XML 文档或图像。
 >
 > 视图的代码按惯例是放置一个名为`views.py`的文件中，此文件放在项目或应用程序目录中。（其实视图文件名可以自己定义）
 
 ## 1. 一个简单的视图
 
-这是一个返回当前日期和时间的视图，作为HTML文档：
+这是一个返回当前日期和时间的视图，作为 HTML 文档：
 
 ```python
 from django.http import HttpResponse
@@ -1867,11 +1869,11 @@ urlpatterns = [
 # 其中as_view()是接受请求并返回响应的可调用视图['get', 'post', 'put', 'patch', 'delete, 'options'.]
 ```
 
-## ①HttpResponse对象
+## ①HttpResponse 对象
 
-1. 在django.http模块中定义了HttpResponse对象的API
-2. HttpRequest对象由Django自动创建，HttpResponse对象由程序员创建
-3. 在每一个视图函数中必须返回一个HttpResponse对象,当然也可以是HttpResponse子对象
+1. 在 django.http 模块中定义了 HttpResponse 对象的 API
+2. HttpRequest 对象由 Django 自动创建，HttpResponse 对象由程序员创建
+3. 在每一个视图函数中必须返回一个 HttpResponse 对象,当然也可以是 HttpResponse 子对象
 
 ### 1.不用模板,直接返回数据
 
@@ -1892,7 +1894,7 @@ def index(request):
 	return render(request,'user/edit.html',{'info':'你好'})
 ```
 
-### 3.子类HttpResponseRedirect
+### 3.子类 HttpResponseRedirect
 
 > 重定向，服务器端跳转
 > 构造函数的第一个参数用来指定重定向的地址
@@ -1906,11 +1908,11 @@ def index(request):
     return redirect(reverse('myindex')
 ```
 
-### 4.子类JsonResponse
+### 4.子类 JsonResponse
 
-> 返回json数据，一般用于异步请求
-> 帮助用户创建JSON编码的响应
-> JsonResponse的默认Content-Type为application/json
+> 返回 json 数据，一般用于异步请求
+> 帮助用户创建 JSON 编码的响应
+> JsonResponse 的默认 Content-Type 为 application/json
 
 ```python
 from django.http import JsonResponse
@@ -1924,15 +1926,15 @@ def index2(requeset):
     return JsonResponse({"data": data})
 ```
 
-### 5.set_cookie方法
+### 5.set_cookie 方法
 
 > Cookie 是由 Web 服务器保存在用户浏览器（客户端）上的小文本文件，它可以包含有关用户的信息。
 >
-> 服务器可以利用Cookies包含信息的任意性来筛选并经常性维护这些信息，以判断在HTTP传输中的状态。
+> 服务器可以利用 Cookies 包含信息的任意性来筛选并经常性维护这些信息，以判断在 HTTP 传输中的状态。
 >
-> Cookies最典型的应用是判定注册用户是否已经登录网站
+> Cookies 最典型的应用是判定注册用户是否已经登录网站
 
-**设置cookie**
+**设置 cookie**
 
 ```python
  # 获取当前的 响应对象
@@ -1964,7 +1966,7 @@ def resp06(request):
     return response
 ```
 
-**获取cookie**
+**获取 cookie**
 
 ```python
 # 读取
@@ -1976,7 +1978,7 @@ else:
     return HttpResponse('cookie不存在')
 ```
 
-- 使用cookie做了一个页面访问计数器
+- 使用 cookie 做了一个页面访问计数器
 
 ```python
 def resp06(request):
@@ -1994,30 +1996,30 @@ def resp06(request):
   return response
 ```
 
-## ②HttpReqeust对象
+## ②HttpReqeust 对象
 
-- 服务器接收到http协议的请求后，会根据报文创建HttpRequest对象
-- **视图函数的第一个参数是HttpRequest对象**
-- 在django.http模块中定义了HttpRequest对象的API
+- 服务器接收到 http 协议的请求后，会根据报文创建 HttpRequest 对象
+- **视图函数的第一个参数是 HttpRequest 对象**
+- 在 django.http 模块中定义了 HttpRequest 对象的 API
 
 ### 属性
 
 下面除非特别说明，属性都是只读的
 
 - path：一个字符串，表示请求的页面的完整路径，不包含域名
-- method：一个字符串，表示请求使用的HTTP方法，常用值包括：'GET'、'POST'
+- method：一个字符串，表示请求使用的 HTTP 方法，常用值包括：'GET'、'POST'
 - encoding：一个字符串，表示提交的数据的编码方式
-    - 如果为None则表示使用浏览器的默认设置，一般为utf-8
-    - 这个属性是可写的，可以通过修改它来修改访问表单数据使用的编码，接下来对属性的任何访问将使用新的encoding值
-- GET：一个类似于字典的对象，包含get请求方式的所有参数
-- POST：一个类似于字典的对象，包含post请求方式的所有参数
+  - 如果为 None 则表示使用浏览器的默认设置，一般为 utf-8
+  - 这个属性是可写的，可以通过修改它来修改访问表单数据使用的编码，接下来对属性的任何访问将使用新的 encoding 值
+- GET：一个类似于字典的对象，包含 get 请求方式的所有参数
+- POST：一个类似于字典的对象，包含 post 请求方式的所有参数
 - FILES：一个类似于字典的对象，包含所有的上传文件
-- COOKIES：一个标准的Python字典，包含所有的cookie，键和值都为字符串
-- session：一个既可读又可写的类似于字典的对象，表示当前的会话，只有当Django 启用会话的支持时才可用，详细内容见“状态保持”
+- COOKIES：一个标准的 Python 字典，包含所有的 cookie，键和值都为字符串
+- session：一个既可读又可写的类似于字典的对象，表示当前的会话，只有当 Django 启用会话的支持时才可用，详细内容见“状态保持”
 
 ### 方法
 
-- `is_ajax()`：如果请求是通过XMLHttpRequest发起的，则返回True
+- `is_ajax()`：如果请求是通过 XMLHttpRequest 发起的，则返回 True
 
 ```python
 # 测试request对象
@@ -2032,37 +2034,37 @@ def resp07(request):
     return HttpResponse("测试request请求对象")
 ```
 
-## ③QueryDict对象
+## ③QueryDict 对象
 
--   定义在django.http.QueryDict
+- 定义在 django.http.QueryDict
 
--   request对象的属性GET、POST都是QueryDict类型的对象
+- request 对象的属性 GET、POST 都是 QueryDict 类型的对象
 
--   与python字典不同，QueryDict类型的对象用来处理同一个键带有多个值的情况
+- 与 python 字典不同，QueryDict 类型的对象用来处理同一个键带有多个值的情况
 
--   方法get()：根据键获取值
+- 方法 get()：根据键获取值
 
-    -   只能获取键的一个值
+  - 只能获取键的一个值
 
-    -   如果一个键同时拥有多个值，获取最后一个值
+  - 如果一个键同时拥有多个值，获取最后一个值
 
-        ```python
-        dict.get('键',default)
-        或简写为
-        dict['键']
-        ```
+    ```python
+    dict.get('键',default)
+    或简写为
+    dict['键']
+    ```
 
--   方法getlist()：根据键获取值
+- 方法 getlist()：根据键获取值
 
-    -   将键的值以列表返回，可以获取一个键的多个值
+  - 将键的值以列表返回，可以获取一个键的多个值
 
-        ```python
-        dict.getlist('键',default)
-        ```
+    ```python
+    dict.getlist('键',default)
+    ```
 
 **GET && POST**
 
->   **一键一值**
+> **一键一值**
 
 ```python
 http://127.0.0.1/get?a=1&b=2&c=3
@@ -2071,7 +2073,7 @@ request.GET['name']
 request.GET.get('name',None)
 ```
 
->   **一键多值**
+> **一键多值**
 
 ```python
 http://127.0.0.1/get?a=1&a=2&b=3
@@ -2081,7 +2083,7 @@ request.GET.getlist('name',None)
 request.POST.getlist('name',None)
 ```
 
-## ④验证码实战
+## ④ 验证码实战
 
 ```python
 # 验证码的输出
@@ -2139,27 +2141,27 @@ def verifycode(request):
     return HttpResponse(buf.getvalue(), 'image/png')
 ```
 
-在模板的html文件中,可以直接引用
+在模板的 html 文件中,可以直接引用
 
 ```python
 <img id='verifycode' src="{% url 'resp08' %}" alt="CheckCode"/>
 ```
 
-## 2.6 Django的模板层
+## 2.6 Django 的模板层
 
-## Template模板
+## Template 模板
 
->   作为Web 框架，Django 需要一种很便利的方法以动态地生成HTML。最常见的做法是使用模板。
+> 作为 Web 框架，Django 需要一种很便利的方法以动态地生成 HTML。最常见的做法是使用模板。
 >
->   模板包含所需HTML 输出的静态部分，以及一些特殊的语法，描述如何将动态内容插入。
+> 模板包含所需 HTML 输出的静态部分，以及一些特殊的语法，描述如何将动态内容插入。
 
 ## 模板引擎配置
 
->   模板引擎使用该TEMPLATES设置进行配置。这是一个配置列表，每个引擎一个。
+> 模板引擎使用该 TEMPLATES 设置进行配置。这是一个配置列表，每个引擎一个。
 >
->   默认值为空。在 settings.py由所产生的startproject命令定义一个更有用的值：
+> 默认值为空。在 settings.py 由所产生的 startproject 命令定义一个更有用的值：
 >
->   在做下面模板配置的同时，也要在项目的根目录下创建一个`templates`目录
+> 在做下面模板配置的同时，也要在项目的根目录下创建一个`templates`目录
 
 ```python
 # 项目目录下的settings.py配置文件添加TEMPLATES中的DIRS配置
@@ -2180,45 +2182,45 @@ TEMPLATES = [
     ]
 ```
 
-## ①模板语法
+## ① 模板语法
 
 ### 1.变量
 
--   变量输出语法
+- 变量输出语法
 
-    ```js
-    {{  var  }}
-    ```
+  ```js
+  {{  var  }}
+  ```
 
--   当模版引擎遇到一个变量，将计算这个变量，然后将结果输出
+- 当模版引擎遇到一个变量，将计算这个变量，然后将结果输出
 
--   变量名必须由字母、数字、下划线（不能以下划线开头）和点组成
+- 变量名必须由字母、数字、下划线（不能以下划线开头）和点组成
 
--   当模版引擎遇到点(".")，会按照下列顺序查询：
+- 当模版引擎遇到点(".")，会按照下列顺序查询：
 
-    -   字典查询，例如：foo["bar"]
-    -   属性或方法查询，例如：foo.bar
-    -   数字索引查询，例如：foo[bar]
+  - 字典查询，例如：foo["bar"]
+  - 属性或方法查询，例如：foo.bar
+  - 数字索引查询，例如：foo[bar]
 
--   如果变量不存在， 模版系统将插入'' (空字符串)
+- 如果变量不存在， 模版系统将插入'' (空字符串)
 
--   在模板中调用方法时不能传递参数
+- 在模板中调用方法时不能传递参数
 
 ### 2.标签
 
--   语法
+- 语法
 
-    ```python
-    { %  tag  % }
-    ```
+  ```python
+  { %  tag  % }
+  ```
 
--   作用
+- 作用
 
-    -   在输出中创建文本
-    -   控制循环或逻辑
-    -   加载外部信息到模板中
+  - 在输出中创建文本
+  - 控制循环或逻辑
+  - 加载外部信息到模板中
 
-#### for标签
+#### for 标签
 
 ```js
 { %  for ... in ...  % }
@@ -2227,7 +2229,7 @@ TEMPLATES = [
 { %  endfor  % }
 ```
 
-#### if标签
+#### if 标签
 
 ```js
 { %  if ...  % }
@@ -2239,7 +2241,7 @@ TEMPLATES = [
 { %  endif  % }
 ```
 
-#### comment标签
+#### comment 标签
 
 ```js
 { %  comment  % }
@@ -2265,13 +2267,13 @@ TEMPLATES = [
 { %  csrf_token  % }
 ```
 
-## ②模板继承
+## ② 模板继承
 
 - **模板继承可以减少页面内容的重复定义，实现页面内容的重用**
 - 典型应用：网站的头部、尾部是一样的，这些内容可以定义在父模板中，子模板不需要重复定义
-- block标签：在父模板中预留区域，在子模板中填充
-- **extends继承：继承，写在模板文件的第一行**
-- 定义父模板base.html
+- block 标签：在父模板中预留区域，在子模板中填充
+- **extends 继承：继承，写在模板文件的第一行**
+- 定义父模板 base.html
 
 ```js
 { %  block block_name  % }
@@ -2280,13 +2282,13 @@ TEMPLATES = [
 { %  endblock  % }
 ```
 
-- 定义子模板index.html
+- 定义子模板 index.html
 
 ```
 { %  extends "base.html"  % }
 ```
 
-- 在子模板中使用block填充预留区域
+- 在子模板中使用 block 填充预留区域
 
 ```js
 { %  block block_name  % }
@@ -2296,12 +2298,12 @@ TEMPLATES = [
 
 **说明**
 
-- **如果在模版中使用extends标签，它必须是模版中的第一个标签**
-- **不能在一个模版中定义多个相同名字的block标签**
-- 子模版不必定义全部父模版中的blocks，如果子模版没有定义block，则使用了父模版中的默认值
+- **如果在模版中使用 extends 标签，它必须是模版中的第一个标签**
+- **不能在一个模版中定义多个相同名字的 block 标签**
+- 子模版不必定义全部父模版中的 blocks，如果子模版没有定义 block，则使用了父模版中的默认值
 - 如果发现在模板中大量的复制内容，那就应该把内容移动到父模板中
-- 使用可以获取父模板中block的内容
-- 为了更好的可读性，可以给endblock标签一个名字
+- 使用可以获取父模板中 block 的内容
+- 为了更好的可读性，可以给 endblock 标签一个名字
 
 ```js
 { %  block block_name  % }
@@ -2343,10 +2345,10 @@ TEMPLATES = [
 
 #### 2.创建分支模版
 
-- 继承自base.html
-- 名为“base_***.html”
+- 继承自 base.html
+- 名为“base\_\*\*\*.html”
 - 定义特定分支共用的内容
-- 定义base_goods.html
+- 定义 base_goods.html
 
 ```js
 { %  extends 'temtest/base.html'  % }
@@ -2358,7 +2360,7 @@ TEMPLATES = [
 { %  endblock  % }
 ```
 
-- 定义base_user.html
+- 定义 base_user.html
 
 ```js
 { %  extends 'temtest/base.html'  % }
@@ -2370,7 +2372,7 @@ TEMPLATES = [
 { %  endblock  % }
 ```
 
-- 定义index.html，继承自base.html，不需要写left块
+- 定义 index.html，继承自 base.html，不需要写 left 块
 
 ```js
 { %  extends 'temtest/base.html'  % }
@@ -2382,7 +2384,7 @@ TEMPLATES = [
 
 #### 3.为具体页面创建模板，继承自分支模板
 
-- 定义商品列表页goodslist.html
+- 定义商品列表页 goodslist.html
 
 ```js
 { %  extends 'temtest/base_goods.html'  % }
@@ -2391,7 +2393,7 @@ TEMPLATES = [
 { %  endblock content  % }
 ```
 
-- 定义用户密码页userpwd.html
+- 定义用户密码页 userpwd.html
 
 ```js
 { %  extends 'temtest/base_user.html'  % }
@@ -2402,7 +2404,7 @@ TEMPLATES = [
 
 #### 4.视图调用具体页面，并传递模板中需要的数据
 
-- 首页视图index
+- 首页视图 index
 
 ```py
 logo='welcome to itcast'
@@ -2410,21 +2412,21 @@ def index(request):
     return render(request, 'temtest/index.html', {'logo': logo})
 ```
 
-- 商品列表视图goodslist
+- 商品列表视图 goodslist
 
 ```py
 def goodslist(request):
     return render(request, 'temtest/goodslist.html', {'logo': logo})
 ```
 
-- 用户密码视图userpwd
+- 用户密码视图 userpwd
 
 ```py
 def userpwd(request):
     return render(request, 'temtest/userpwd.html', {'logo': logo})
 ```
 
-#### 5.配置url
+#### 5.配置 url
 
 ```py
 from django.urls import path
@@ -2435,56 +2437,3 @@ urlpatterns = [
     path('pwd/', views.userpwd, name='pwd'),
 ]
 ```
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
