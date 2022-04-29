@@ -2,6 +2,6 @@ module.exports = [
   {
     title: "MySQL笔记",
     collapsable: true,
-    children: ["/database/mysql/notes/mysql"],
+    children: ["/sundry/mysql/notes/mysql"],
   },
 ];
