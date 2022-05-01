@@ -76,8 +76,9 @@ module.exports = [
   {
     text: "Python教程",
     items: [
-      { text: "flask笔记", link: "/python/flask/" },
-      { text: "django笔记", link: "/python/django/" },
+      { text: "flask教程", link: "/python/flask/" },
+      { text: "django教程", link: "/python/django/" },
+      { text: "爬虫教程", link: "/python/spyder/" },
     ],
   },
   {
