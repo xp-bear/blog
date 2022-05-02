@@ -7,6 +7,7 @@ module.exports = {
     ["meta", { name: "keywords", content: "熊仔笔记,想走过亚洲的熊" }],
     ["meta", { name: "baidu-site-verification", content: "code-nuyZxH5QdZ" }],
     ["meta", { name: "wlhlauth", content: "076e7e2b75875b4e0523733b107713ec" }],
+    ["meta", { name: "wlhlauth", content: "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" }],
     ["link", { rel: "icon", href: "/img/favicon.ico" }],
     ["link", { rel: "stylesheet", href: "/css/style.css" }],
     ["script", { charset: "utf-8", src: "/js/canvas-particle.js" }],
