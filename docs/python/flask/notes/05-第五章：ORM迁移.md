@@ -69,7 +69,7 @@ flask db upgrade
 ## 二、项目重构：
 
 现在是所有代码都写在一个文件中，这样会导致文件会越来越乱。所以进行一下项目重构，设置为以下的目录结构：
-<a data-fancybox title="1648284035225" href="http://mk.xxoutman.cn/flask/1648284035225.png">![1648284035225](http://mk.xxoutman.cn/flask/1648284035225.png)</a>
+![1648284035225](http://mk.xxoutman.cn/flask/1648284035225.png)
 以下对各个文件的作用进行解释。
 
 ### 1. constants.py文件：

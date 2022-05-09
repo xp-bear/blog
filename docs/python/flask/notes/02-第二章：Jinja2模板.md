@@ -69,13 +69,13 @@ def about():
 <body>
 <ul id="navigation">
     {% for item in navigation %}
-        <li><a href="{ { item.href } }">{ { item.caption } }</a></li>
+        <li></li>
     {% endfor %}
 </ul>
 
-{ { a_variable } }
-{ { user.name } }
-{ { user['name'] } }
+{{ a_variable } }
+{{ user.name } }
+{{ user['name'] } }
 
 {# 一个注释 #}
 </body>
@@ -86,7 +86,7 @@ def about():
 
 - 第 7~9 行的`{% ... %}`：用来装载一个控制语句，以上装载的是`for`循环，以后只要是要用到控制语句的，就用`{% ... %}`。
 
-- 第 12~14 行的`{ { ... } }`：用来装载一个变量，模板渲染的时候，会把这个变量代表的值替换掉。并且可以间接访问一个变量的属性或者一个字典的`key`。具体点`.`号访问和`[]`中括号访问，没有任何区别，都可以访问属性和字典的值。
+- 第 12~14 行的`{{ ... } }`：用来装载一个变量，模板渲染的时候，会把这个变量代表的值替换掉。并且可以间接访问一个变量的属性或者一个字典的`key`。具体点`.`号访问和`[]`中括号访问，没有任何区别，都可以访问属性和字典的值。
 - 第 16 行的`{# ... #}`：用来装载一个注释，模板渲染的时候会忽视这中间的值。
 
 ### 二、属性访问规则(了解)：
@@ -102,15 +102,15 @@ def about():
 
 ## Jinja2 模版过滤器
 
-过滤器是通过管道符号（`|`）进行使用的，例如：`{ { name|length } }`，将返回 name 的长度。过滤器相当于是一个函数，把当前的变量传入到过滤器中，然后过滤器根据自己的功能，再返回相应的值，之后再将结果渲染到页面中。`Jinja2`中内置了许多过滤器，在[这里](https://jinja.palletsprojects.com/en/3.0.x/templates/#list-of-builtin-filters)可以看到所有的过滤器，现对一些常用的过滤器进行讲解：
+过滤器是通过管道符号（`|`）进行使用的，例如：`{{ name|length } }`，将返回 name 的长度。过滤器相当于是一个函数，把当前的变量传入到过滤器中，然后过滤器根据自己的功能，再返回相应的值，之后再将结果渲染到页面中。`Jinja2`中内置了许多过滤器，在[这里](https://jinja.palletsprojects.com/en/3.0.x/templates/#list-of-builtin-filters)可以看到所有的过滤器，现对一些常用的过滤器进行讲解：
 
-1. `abs(value)`：返回一个数值的绝对值。 例如：`{ { -1|abs } }`。
+1. `abs(value)`：返回一个数值的绝对值。 例如：`{{ -1|abs } }`。
 
 2. `default(value,default_value,boolean=false)`：如果当前变量没有值，则会使用参数中的值来代替。例如:
 
-   `{ { name|default('萧兮') } }` —如果 name 不存在，则会使用`萧兮`来替代。
+   `{{ name|default('萧兮') } }` —如果 name 不存在，则会使用`萧兮`来替代。
 
-   `{ { old|default('萧兮',boolean=False) } } ` boolean=False 默认是在只有这个变量为`undefined`的时候才会使用`default`中的值，如果想使用 Boolean 的 true 或 false 进行渲染默认值，则需要使用 boolean=true。
+   `{{ old|default('萧兮',boolean=False) } } ` boolean=False 默认是在只有这个变量为`undefined`的时候才会使用`default`中的值，如果想使用 Boolean 的 true 或 false 进行渲染默认值，则需要使用 boolean=true。
 
 3. `autoescape` :将 HTML 字符串转成语义化内容
 
@@ -120,27 +120,27 @@ def about():
 
    #模板里面
    {% autoescape False %}
-   { { html } }
+   {{ html } }
    {% endautoescape %}
    ```
 
-4. `first(value)`：返回一个序列的第一个元素。`{ {names|first} }` 列表与字典都适用。
+4. `first(value)`：返回一个序列的第一个元素。`{{names|first} }` 列表与字典都适用。
 
 5. `last(value)`：返回一个序列的最后一个元素。示例：`names|last`。
 
 6. `length(value)`：返回一个序列或者字典的长度。示例：`names|length`。
 
-7. `join(value,d=',')`：将一个序列用`d`这个参数的值拼接成字符串。例如: `{ { list|join('-') } }`
+7. `join(value,d=',')`：将一个序列用`d`这个参数的值拼接成字符串。例如: `{{ list|join('-') } }`
 
-8. `int(value)`：将值转换为`int`类型。`{ { number|int } }`
+8. `int(value)`：将值转换为`int`类型。`{{ number|int } }`
 
-9. `float(value)`：将值转换为`float`类型。` { { number|float } }`
+9. `float(value)`：将值转换为`float`类型。` {{ number|float } }`
 
 10. `lower(value)`：将字符串转换为小写。
 
 11. `upper(value)`：将字符串转换为小写。
 
-12. `replace(value,old,new)`： 替换将`old`替换为`new`的字符串。 例如: `{ { case|replace('as',"As") } }`
+12. `replace(value,old,new)`： 替换将`old`替换为`new`的字符串。 例如: `{{ case|replace('as',"As") } }`
 
 13. `striptags(value)`：删除字符串中所有的 HTML 标签，如果出现多个空格，将替换成一个空格。
 
@@ -188,7 +188,7 @@ def about():
      ```python
      <ul>
      {% for user in users %}
-     	<li>{ { user.username } }</li>
+     	<li>{{ user.username } }</li>
      {% endfor %}
      </ul>
      ```
@@ -198,7 +198,7 @@ def about():
      ```python
      <ul>
          {% for key,value in users.items() %}
-             <li>{ { key } }--{ { value } }</li>
+             <li>{{ key } }--{{ value } }</li>
          {% endfor %}
      </ul>
      ```
@@ -208,7 +208,7 @@ def about():
   ```python
      <ul>
      {% for user in users %}
-     	<li>{ { user.username } }</li>
+     	<li>{{ user.username } }</li>
      {% else %}
      	<li>暂无数据</li>
      {% endfor %}
@@ -227,11 +227,11 @@ def about():
 
 ```python
 {% for user in users %}
-        <li>{ { loop.index } }</li>
-        <li>{ { loop.index0 } }</li>
-        <li>{ { loop.first } }</li>
-        <li>{ { loop.last } }</li>
-        <li>总长度: { { loop.length } }</li>
+        <li>{{ loop.index } }</li>
+        <li>{{ loop.index0 } }</li>
+        <li>{{ loop.first } }</li>
+        <li>{{ loop.last } }</li>
+        <li>总长度: {{ loop.length } }</li>
 {% endfor %}
 ```
 
@@ -269,15 +269,15 @@ def about():
 
 ```python
 {% macro input(name, value='我是默认值', type='text') %}
-	<input name="{ { name } }" value="{ { value|e } }" type="{ { type } }">
+	<input name="{{ name } }" value="{{ value|e } }" type="{{ type } }">
 {% endmacro %}
 ```
 
 以上例子可以抽取出了一个 input 标签，指定了一些默认参数。那么我们以后创建`input`标签的时候，可以通过他快速的创建：
 
 ```python
-<p>{ { input('username') } }</p>
-<p>{ { input('password', type='password',value='') } }</p>
+<p>{{ input('username') } }</p>
+<p>{{ input('password', type='password',value='') } }</p>
 ```
 
 ### 二、import 语句：
@@ -286,11 +286,11 @@ def about():
 
 ```python
 {% macro input(name, value='', type='text') %}
-    <input name="{ { name } }" value="{ { value } }" type="{ { type } }">
+    <input name="{{ name } }" value="{{ value } }" type="{{ type } }">
 {% endmacro %}
 
 {% macro textarea(name, value='', rows=10, cols=40) %}
-    <textarea name="{ { name } }" rows="{ { rows } }" cols="{ { cols } }">{ { value } }</textarea>
+    <textarea name="{{ name } }" rows="{{ rows } }" cols="{{ cols } }">{{ value } }</textarea>
 {% endmacro %}
 ```
 
@@ -302,11 +302,11 @@ def about():
    {% import 'forms.html' as forms %}
    <dl>
     <dt>Username</dt>
-    <dd>{ { forms.input('username') } }</dd>
+    <dd>{{ forms.input('username') } }</dd>
     <dt>Password</dt>
-    <dd>{ { forms.input('password', type='password') } }</dd>
+    <dd>{{ forms.input('password', type='password') } }</dd>
    </dl>
-   <p>{ { forms.textarea('comment') } }</p>
+   <p>{{ forms.textarea('comment') } }</p>
    ```
 
 2. `from...import...as.../from...import...`形式：
@@ -315,11 +315,11 @@ def about():
    {% from 'forms.html' import input as input_field, textarea %}
    <dl>
     <dt>Username</dt>
-    <dd>{ { input_field('username') } }</dd>
+    <dd>{{ input_field('username') } }</dd>
     <dt>Password</dt>
-    <dd>{ { input_field('password', type='password') } }</dd>
+    <dd>{{ input_field('password', type='password') } }</dd>
    </dl>
-   <p>{ { textarea('comment') } }</p>
+   <p>{{ textarea('comment') } }</p>
    ```
 
 ## include 和 set 语句
@@ -369,7 +369,7 @@ def about():
 ```python
 {% with %}
     {% set foo = 42 %}
-    { { foo } }           #这里的foo的值是42
+    {{ foo } }           #这里的foo的值是42
 {% endwith %}
 ```
 
@@ -377,7 +377,7 @@ def about():
 
 ```python
 {% with foo = 42 %}
-    { { foo } }
+    {{ foo } }
 {% endwith %}
 ```
 
@@ -411,7 +411,7 @@ def about():
 {% block title %}首页{% endblock %}
 
 {% block head %}
-    { { super() } }
+    {{ super() } }
     <style type="text/css">
         .detail{
             color: red;
@@ -439,7 +439,7 @@ def about():
 {% endblock %}
 
 {% block body %}
-    <h1>{ { self.title() } }</h1>
+    <h1>{{ self.title() } }</h1>
 {% endblock %}
 ```
 
@@ -461,15 +461,15 @@ def about():
 - `%`号运算符：取余运算。
 - `*`号运算符：乘号运算符，并且可以对字符进行相乘。
 - `**`号运算符：次幂运算符，比如 2\*\*3=8。
-- `in`操作符：跟 python 中的`in`一样使用，比如`{ {1 in [1,2,3]} }`返回`true`。
-- `~`号运算符：拼接多个字符串，比如`{ {"Hello" ~ "World"} }`将返回`HelloWorld`。
+- `in`操作符：跟 python 中的`in`一样使用，比如`{{1 in [1,2,3]} }`返回`true`。
+- `~`号运算符：拼接多个字符串，比如`{{"Hello" ~ "World"} }`将返回`HelloWorld`。
 
 ## 静态文件的配置
 
 `Web`应用中会出现大量的静态文件来使得网页更加生动美观。类似于`CSS`样式文件、`JavaScript`脚本文件、图片文件、字体文件等静态资源。在`Jinja`中加载静态文件非常简单，只需要通过`url_for`全局函数就可以实现，看以下代码：
 
 ```python
-<link href="{ { url_for('static',filename='about.css') } }">
+<link href="{{ url_for('static',filename='about.css') } }">
 ```
 
 `url_for`函数默认会在项目根目录下的`static`文件夹中寻找`about.css`文件，如果找到了，会生成一个相对于项目根目录下的`/static/about.css`路径。当然我们也可以把静态文件不放在`static`文件夹中，此时就需要具体指定了，看以下代码：

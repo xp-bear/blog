@@ -6,7 +6,7 @@
 
 - 目前 Web 开发属于 Browser/Server 模式，简称 B/S 架构，开发语言有（Python、PHP、Java 、node.js ...）。
 - 基于 Python 的 Web 工作原理如下：
-- <a data-fancybox title="xx" href="http://mk.xxoutman.cn/img/webjg.png" rel="external nofollow" >![img](http://mk.xxoutman.cn/img/webjg.png)</a>
+- ![img](http://mk.xxoutman.cn/img/webjg.png)
 
 ## (2). 框架介绍：
 
@@ -74,9 +74,9 @@
 
 - Django 的开发版本
 
-<a data-fancybox title="img" href="http://mk.xxoutman.cn/img/release-roadmap.e844db08610e.png">![img](http://mk.xxoutman.cn/img/release-roadmap.e844db08610e.png)</a>
+![img](http://mk.xxoutman.cn/img/release-roadmap.e844db08610e.png)
 
-<a data-fancybox title="img" href="http://mk.xxoutman.cn/img/22.png">![img](http://mk.xxoutman.cn/img/22.png)</a>
+![img](http://mk.xxoutman.cn/img/22.png)
 
 ## (4). Django 的安装
 
@@ -921,11 +921,11 @@ urlpatterns = [
 - 您可以使用以下 HTML 模板代码获取这些：
 
 ```python
-<a href="{ %   url 'year_archive' 2020   % }">2020 Archive</a>
+
 
 <ul>
     {% for yearvar in year_list %}
-        <li><a href="{% url 'year_archive' yearvar %}">{{ yearvar }} Archive</a></li>
+        <li></li>
     {% endfor %}
 </ul>
 ```
@@ -1486,7 +1486,7 @@ def index(request):
     for u in ulist:
         print(u.id, u.name, u.age, u.addtime)
     return HttpResponse("首页")
-	# return HttpResponse("<center><h1>用户主页</h1> <a href='/indexUsers'>学生管理系统</a> </center>")
+	# return HttpResponse("<center><h1>用户主页</h1>  </center>")
 ```
 
 下面在`views.py`里面写业务逻辑

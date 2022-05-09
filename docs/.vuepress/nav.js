@@ -46,7 +46,7 @@ module.exports = [
       {
         text: "vue+ts系列",
         items: [
-          { text: "阿里云", link: "https://cloud.tencent5.com/" },
+          { text: "vue3教程", link: "/vue3_ts/vue3/" },
           { text: "腾讯云", link: "https://cloud.tencengft5.com/" },
         ],
       },

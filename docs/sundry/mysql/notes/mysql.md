@@ -6,13 +6,13 @@
 
 在这一部分，我们先来讲解三个概念：数据库、数据库管理系统、SQL。
 
-<a data-fancybox title="image-20220413155735996" href="http://mk.xxoutman.cn/img/image-20220413155735996.png">![image-20220413155735996](http://mk.xxoutman.cn/img/image-20220413155735996.png)</a>
+![image-20220413155735996](http://mk.xxoutman.cn/img/image-20220413155735996.png)
 
-<a data-fancybox title="image-20220413155750146" href="http://mk.xxoutman.cn/img/image-20220413155750146.png">![image-20220413155750146](http://mk.xxoutman.cn/img/image-20220413155750146.png)</a>
+![image-20220413155750146](http://mk.xxoutman.cn/img/image-20220413155750146.png)
 
 而目前主流的关系型数据库管理系统的市场占有率排名如下：
 
-<a data-fancybox title="image-20220413155821695" href="http://mk.xxoutman.cn/img/image-20220413155821695.png">![image-20220413155821695](http://mk.xxoutman.cn/img/image-20220413155821695.png)</a>
+![image-20220413155821695](http://mk.xxoutman.cn/img/image-20220413155821695.png)
 
 - Oracle：大型的收费数据库，Oracle 公司产品，价格昂贵。
 - MySQL：开源免费的中小型数据库，后来 Sun 公司收购了 MySQL，而 Oracle 又收购了 Sun 公司。 目前 Oracle 推出了收费版本的 MySQL，也提供了免费的社区版本。
@@ -28,7 +28,7 @@
 
 ### 1.2.1 版本
 
-<a data-fancybox title="image-20220413160044493" href="http://mk.xxoutman.cn/img/image-20220413160044493.png">![image-20220413160044493](http://mk.xxoutman.cn/img/image-20220413160044493.png)</a>
+![image-20220413160044493](http://mk.xxoutman.cn/img/image-20220413160044493.png)
 
 MySQL 官方提供了两种不同的版本：
 
@@ -58,13 +58,13 @@ net stop mysql80
 
 注意 ： 上述的 mysql80 是我们在安装 MySQL 时，默认指定的 mysql 的系统服务名，不是固定的，如果未改动，默认就是 mysql80。
 
-<a data-fancybox title="image-20220413160452058" href="http://mk.xxoutman.cn/img/image-20220413160452058.png">![image-20220413160452058](http://mk.xxoutman.cn/img/image-20220413160452058.png)</a>
+![image-20220413160452058](http://mk.xxoutman.cn/img/image-20220413160452058.png)
 
 ### 1.2.5 客户端连接
 
 1). 方式一：使用 MySQL 提供的客户端命令行工具
 
-<a data-fancybox title="image-20220413160523208" href="http://mk.xxoutman.cn/img/image-20220413160523208.png">![image-20220413160523208](http://mk.xxoutman.cn/img/image-20220413160523208.png)</a>
+![image-20220413160523208](http://mk.xxoutman.cn/img/image-20220413160523208.png)
 
 2). 方式二：使用系统自带的命令行工具执行指令
 
@@ -93,7 +93,7 @@ mysql [-h 127.0.0.1] [-P 3306] -u root -p
 
 的。简单说，基于二维表存储 数据的数据库就成为关系型数据库，不是基于二维表存储数据的数据库，就是非关系型数据库。
 
-<a data-fancybox title="image-20220413160846649" href="http://mk.xxoutman.cn/img/image-20220413160846649.png">![image-20220413160846649](http://mk.xxoutman.cn/img/image-20220413160846649.png)</a>
+![image-20220413160846649](http://mk.xxoutman.cn/img/image-20220413160846649.png)
 
 特点：
 
@@ -105,7 +105,7 @@ B. 使用 SQL 语言操作，标准统一，使用方便。
 
 MySQL 是关系型数据库，是基于二维表进行数据存储的，具体的结构图下:
 
-<a data-fancybox title="image-20220413160928178" href="http://mk.xxoutman.cn/img/image-20220413160928178.png">![image-20220413160928178](http://mk.xxoutman.cn/img/image-20220413160928178.png)</a>
+![image-20220413160928178](http://mk.xxoutman.cn/img/image-20220413160928178.png)
 
 - 我们可以通过 MySQL 客户端连接数据库管理系统 DBMS，然后通过 DBMS 操作数据库。
 - 可以使用 SQL 语句，通过数据库管理系统操作数据库，以及操作数据库中的表结构及数据。
@@ -134,7 +134,7 @@ MySQL 是关系型数据库，是基于二维表进行数据存储的，具体�
 
 SQL 语句，根据其功能，主要分为四类：DDL、DML、DQL、DCL。
 
-<a data-fancybox title="image-20220413161224407" href="http://mk.xxoutman.cn/img/image-20220413161224407.png">![image-20220413161224407](http://mk.xxoutman.cn/img/image-20220413161224407.png)</a>
+![image-20220413161224407](http://mk.xxoutman.cn/img/image-20220413161224407.png)
 
 ## 2.3 DDL
 
@@ -148,7 +148,7 @@ Data Definition Language，数据定义语言，用来定义数据库对象(数�
 show databases ;
 ```
 
-<a data-fancybox title="image-20220413161421880" href="http://mk.xxoutman.cn/img/image-20220413161421880.png">![image-20220413161421880](http://mk.xxoutman.cn/img/image-20220413161421880.png)</a>
+![image-20220413161421880](http://mk.xxoutman.cn/img/image-20220413161421880.png)
 
 2). 查询当前数据库
 
@@ -171,11 +171,11 @@ A. 创建一个 itcast 数据库, 使用数据库默认的字符集。
 create database itcast;
 ```
 
-<a data-fancybox title="image-20220413161605721" href="http://mk.xxoutman.cn/img/image-20220413161605721.png">![image-20220413161605721](http://mk.xxoutman.cn/img/image-20220413161605721.png)</a>
+![image-20220413161605721](http://mk.xxoutman.cn/img/image-20220413161605721.png)
 
 ==在同一个数据库服务器中，不能创建两个名称相同的数据库，否则将会报错。==
 
-<a data-fancybox title="image-20220413161626759" href="http://mk.xxoutman.cn/img/image-20220413161626759.png">![image-20220413161626759](http://mk.xxoutman.cn/img/image-20220413161626759.png)</a>
+![image-20220413161626759](http://mk.xxoutman.cn/img/image-20220413161626759.png)
 
 可以通过 if not exists 参数来解决这个问题，数据库不存在, 则创建该数据库，如果存在，则不创建。
 
@@ -183,7 +183,7 @@ create database itcast;
 create database if not extists itcast;
 ```
 
-<a data-fancybox title="image-20220413161659009" href="http://mk.xxoutman.cn/img/image-20220413161659009.png">![image-20220413161659009](http://mk.xxoutman.cn/img/image-20220413161659009.png)</a>
+![image-20220413161659009](http://mk.xxoutman.cn/img/image-20220413161659009.png)
 
 B. 创建一个 itheima 数据库，并且指定字符集
 
@@ -191,7 +191,7 @@ B. 创建一个 itheima 数据库，并且指定字符集
 create database itheima default charset utf8mb4;
 ```
 
-<a data-fancybox title="image-20220413161744456" href="http://mk.xxoutman.cn/img/image-20220413161744456.png">![image-20220413161744456](http://mk.xxoutman.cn/img/image-20220413161744456.png)</a>
+![image-20220413161744456](http://mk.xxoutman.cn/img/image-20220413161744456.png)
 
 4). 删除数据库
 
@@ -201,7 +201,7 @@ drop database [ if exists ] 数据库名 ;
 
 如果删除一个不存在的数据库，将会报错。此时，可以加上参数 if exists ，如果数据库存在，再执行删除，否则不执行删除。
 
-<a data-fancybox title="image-20220413161826188" href="http://mk.xxoutman.cn/img/image-20220413161826188.png">![image-20220413161826188](http://mk.xxoutman.cn/img/image-20220413161826188.png)</a>
+![image-20220413161826188](http://mk.xxoutman.cn/img/image-20220413161826188.png)
 
 5). 切换数据库
 
@@ -232,7 +232,7 @@ use sys;
 show tables;
 ```
 
-<a data-fancybox title="image-20220413203516286" href="http://mk.xxoutman.cn/img/image-20220413203516286.png">![image-20220413203516286](http://mk.xxoutman.cn/img/image-20220413203516286.png)</a>
+![image-20220413203516286](http://mk.xxoutman.cn/img/image-20220413203516286.png)
 
 2). 查看指定表结构
 
@@ -242,7 +242,7 @@ desc 表名 ;
 
 通过这条指令，我们可以查看到指定表的字段，字段的类型、是否可以为 NULL，是否存在默认值等信息。
 
-<a data-fancybox title="image-20220413203610737" href="http://mk.xxoutman.cn/img/image-20220413203610737.png">![image-20220413203610737](http://mk.xxoutman.cn/img/image-20220413203610737.png)</a>
+![image-20220413203610737](http://mk.xxoutman.cn/img/image-20220413203610737.png)
 
 3). 查询指定表的建表语句
 
@@ -252,7 +252,7 @@ show create table 表名 ;
 
 通过这条指令，主要是用来查看建表语句的，而有部分参数我们在创建表的时候，并未指定也会查询到，因为这部分是数据库的默认值，如：存储引擎、字符集等。
 
-<a data-fancybox title="image-20220413203704725" href="http://mk.xxoutman.cn/img/image-20220413203704725.png">![image-20220413203704725](http://mk.xxoutman.cn/img/image-20220413203704725.png)</a>
+![image-20220413203704725](http://mk.xxoutman.cn/img/image-20220413203704725.png)
 
 4). 创建表结构
 
@@ -270,7 +270,7 @@ CREATE TABLE 表名(
 
 比如，我们创建一张表 tb_user ，对应的结构如下，那么建表语句为：
 
-<a data-fancybox title="image-20220413203747160" href="http://mk.xxoutman.cn/img/image-20220413203747160.png">![image-20220413203747160](http://mk.xxoutman.cn/img/image-20220413203747160.png)</a>
+![image-20220413203747160](http://mk.xxoutman.cn/img/image-20220413203747160.png)
 
 ```sql
 create table tb_user(
@@ -384,7 +384,7 @@ create table emp(
 
 SQL 语句编写完毕之后，就可以在 MySQL 的命令行中执行 SQL，然后也可以通过 desc 指令查询表结构 信息：
 
-<a data-fancybox title="image-20220413205442920" href="http://mk.xxoutman.cn/img/image-20220413205442920.png">![image-20220413205442920](http://mk.xxoutman.cn/img/image-20220413205442920.png)</a>
+![image-20220413205442920](http://mk.xxoutman.cn/img/image-20220413205442920.png)
 
 表结构创建好了，里面的 name 字段是 varchar 类型，最大长度为 10，也就意味着如果超过 10 将会报 错，如果我们想修改这个字段的类型 或 修改字段的长度该如何操作呢？接下来再来讲解 DDL 语句中， 如何操作表字段。
 
@@ -479,7 +479,7 @@ TRUNCATE TABLE 表名; # 相当于清空表里面的数据
 
 2). 使用起来，并不直观，并不方便 ； 所以呢，我们在日常的开发中，会借助于 MySQL 的图形化界面，来简化开发，提高开发效率。而目前 mysql 主流的图形化界面工具，有以下几种：
 
-<a data-fancybox title="image-20220413210031214" href="http://mk.xxoutman.cn/img/image-20220413210031214.png">![image-20220413210031214](http://mk.xxoutman.cn/img/image-20220413210031214.png)</a>
+![image-20220413210031214](http://mk.xxoutman.cn/img/image-20220413210031214.png)
 
 而本次课程中，选择最后一种 navicate，这种图形化界面工具，功能更加强大，界面提示更加友好， 是我们使用 MySQL 的不二之选。接下来，我们来介绍一下 navicate 该如何安装、使用。
 
@@ -510,7 +510,7 @@ values(1,'1','Itcast','男',10,'123456789012345678','2000-01-01');
 
 A. 方式一: 在左侧的表名上双击，就可以查看这张表的数据
 
-<a data-fancybox title="image-20220414111122243" href="http://mk.xxoutman.cn/img/image-20220414111122243.png">![image-20220414111122243](http://mk.xxoutman.cn/img/image-20220414111122243.png)</a>
+![image-20220414111122243](http://mk.xxoutman.cn/img/image-20220414111122243.png)
 
 B. 方式二: 可以直接一条查询数据的 SQL 语句, 语句如下:
 
@@ -527,11 +527,11 @@ values(1,'1','Itcast','男',-1,'123456789012345678','2000-01-01');
 
 执行上述的 SQL 语句时，报错了，具体的错误信息如下：
 
-<a data-fancybox title="image-20220414111355397" href="http://mk.xxoutman.cn/img/image-20220414111355397.png">![image-20220414111355397](http://mk.xxoutman.cn/img/image-20220414111355397.png)</a>
+![image-20220414111355397](http://mk.xxoutman.cn/img/image-20220414111355397.png)
 
 因为 employee 表的 age 字段类型为 tinyint，而且还是无符号的 unsigned ，所以取值只能在 0-255 之间。
 
-<a data-fancybox title="image-20220414111531746" href="http://mk.xxoutman.cn/img/image-20220414111531746.png">![image-20220414111531746](http://mk.xxoutman.cn/img/image-20220414111531746.png)</a>
+![image-20220414111531746](http://mk.xxoutman.cn/img/image-20220414111531746.png)
 
 2). 给全部字段添加数据
 
@@ -638,7 +638,7 @@ DQL 英文全称是 Data Query Language(数据查询语言)，数据查询语言
 
 在一个正常的业务系统中，==查询操作的频次是要远高于增删改的==，当我们去访问企业官网、电商网站， 在这些网站中我们所看到的数据，实际都是需要从数据库中查询并展示的。而且在查询的过程中，可能 还会涉及到条件、排序、分页等操作。
 
-<a data-fancybox title="image-20220414113437710" href="http://mk.xxoutman.cn/img/image-20220414113437710.png">![image-20220414113437710](http://mk.xxoutman.cn/img/image-20220414113437710.png)</a>
+![image-20220414113437710](http://mk.xxoutman.cn/img/image-20220414113437710.png)
 
 那么，本小节我们主要学习的就是如何进行数据的查询操作。 我们先来完成如下数据准备工作:
 
@@ -993,7 +993,7 @@ select workaddress, gender, count(*) '数量' from emp group by gender , workadd
 
 排序在日常开发中是非常常见的一个操作，有升序排序，也有降序排序。
 
-<a data-fancybox title="image-20220415222322410" href="http://mk.xxoutman.cn/img/image-20220415222322410.png">![image-20220415222322410](http://mk.xxoutman.cn/img/image-20220415222322410.png)</a>
+![image-20220415222322410](http://mk.xxoutman.cn/img/image-20220415222322410.png)
 
 1). 语法
 
@@ -1038,7 +1038,7 @@ select * from emp order by age asc , entrydate desc;
 
 分页操作在业务系统开发时，也是非常常见的一个功能，我们在网站中看到的各种各样的分页条，后台 都需要借助于数据库的分页操作。
 
-<a data-fancybox title="image-20220415222515745" href="http://mk.xxoutman.cn/img/image-20220415222515745.png">![image-20220415222515745](http://mk.xxoutman.cn/img/image-20220415222515745.png)</a>
+![image-20220415222515745](http://mk.xxoutman.cn/img/image-20220415222515745.png)
 
 1). 语法
 
@@ -1104,7 +1104,7 @@ select * from emp where gender = '男' and age between 20 and 40 order by age as
 
 2.6.9 执行顺序 在讲解 DQL 语句的具体语法之前，我们已经讲解了 DQL 语句的完整语法，及编写顺序，接下来，我们要 来说明的是 DQL 语句在执行时的执行顺序，也就是先执行那一部分，后执行那一部分。
 
-<a data-fancybox title="image-20220415222815393" href="http://mk.xxoutman.cn/img/image-20220415222815393.png">![image-20220415222815393](http://mk.xxoutman.cn/img/image-20220415222815393.png)</a>
+![image-20220415222815393](http://mk.xxoutman.cn/img/image-20220415222815393.png)
 
 验证： 查询年龄大于 15 的员工姓名、年龄，并根据年龄进行升序排序。
 
@@ -1128,7 +1128,7 @@ select e.name ename , e.age eage from emp e where eage > 15 order by age asc;
 
 执行上述 SQL 报错了:
 
-<a data-fancybox title="image-20220415222931003" href="http://mk.xxoutman.cn/img/image-20220415222931003.png">![image-20220415222931003](http://mk.xxoutman.cn/img/image-20220415222931003.png)</a>
+![image-20220415222931003](http://mk.xxoutman.cn/img/image-20220415222931003.png)
 
 由此我们可以得出结论: from 先执行，然后执行 where ， 再执行 select 。
 
@@ -1146,7 +1146,7 @@ select e.name ename , e.age eage from emp e where e.age > 15 order by eage asc;
 
 DCL 英文全称是 Data Control Language(数据控制语言)，用来管理数据库用户、控制数据库的访 问权限。
 
-<a data-fancybox title="image-20220416114742008" href="http://mk.xxoutman.cn/img/image-20220416114742008.png">![image-20220416114742008](http://mk.xxoutman.cn/img/image-20220416114742008.png)</a>
+![image-20220416114742008](http://mk.xxoutman.cn/img/image-20220416114742008.png)
 
 ### 2.7.1 管理用户
 
@@ -1159,7 +1159,7 @@ select * from mysql.user;
 
 查询的结果如下:
 
-<a data-fancybox title="image-20220416115133843" href="http://mk.xxoutman.cn/img/image-20220416115133843.png">![image-20220416115133843](http://mk.xxoutman.cn/img/image-20220416115133843.png)</a>
+![image-20220416115133843](http://mk.xxoutman.cn/img/image-20220416115133843.png)
 
 其中 Host 代表当前用户访问的主机, 如果为 localhost, 仅代表只能够在当前本机访问，是不可以远程访问的。 User 代表的是访问该数据库的用户名。在 MySQL 中需要通过 Host 和 User 来唯一标识一 个用户。
 
@@ -1295,7 +1295,7 @@ revoke all on itcast.* from 'heima'@'%';
 
 我们先来看两个场景：
 
-<a data-fancybox title="image-20220420213348974" href="http://mk.xxoutman.cn/img/image-20220420213348974.png">![image-20220420213348974](http://mk.xxoutman.cn/img/image-20220420213348974.png)</a>
+![image-20220420213348974](http://mk.xxoutman.cn/img/image-20220420213348974.png)
 
 1). 在企业的 OA 或其他的人力系统中，经常会提供的有这样一个功能，每一个员工登录上来之后都能 够看到当前员工入职的天数。 而在数据库中，存储的都是入职日期，如 2000-11-12，那如果快速计 算出天数呢？
 
@@ -1361,7 +1361,7 @@ G. substring : 截取子字符串
 select substring('Hello MySQL',1,5); # Hello
 ```
 
-<a data-fancybox title="image-20220420213735087" href="http://mk.xxoutman.cn/img/image-20220420213735087.png">![image-20220420213735087](http://mk.xxoutman.cn/img/image-20220420213735087.png)</a>
+![image-20220420213735087](http://mk.xxoutman.cn/img/image-20220420213735087.png)
 
 由于业务需求变更，企业员工的工号，统一为 5 位数，目前不足 5 位数的全部在前面补 0。比如： 1 号员 工的工号应该为 00001。
 
@@ -1371,7 +1371,7 @@ update emp set workno = lpad(workno, 5, '0');
 
 处理完毕后, 具体的数据为:
 
-<a data-fancybox title="image-20220420213759395" href="http://mk.xxoutman.cn/img/image-20220420213759395.png">![image-20220420213759395](http://mk.xxoutman.cn/img/image-20220420213759395.png)</a>
+![image-20220420213759395](http://mk.xxoutman.cn/img/image-20220420213759395.png)
 
 ## 3.2 数值函数
 
@@ -1635,7 +1635,7 @@ insert into tb_user(name,age,gender) values ('Tom5',120,'男');
 
 上面，我们是通过编写 SQL 语句的形式来完成约束的指定，那加入我们是通过图形化界面来创建表结构 时，又该如何来指定约束呢？ 只需要在创建表的时候，根据我们的需要选择对应的约束即可。
 
-<a data-fancybox title="image-20220420220150054" href="http://mk.xxoutman.cn/img/image-20220420220150054.png">![image-20220420220150054](http://mk.xxoutman.cn/img/image-20220420220150054.png)</a>
+![image-20220420220150054](http://mk.xxoutman.cn/img/image-20220420220150054.png)
 
 ## 4.3 外键约束
 
@@ -1645,7 +1645,7 @@ insert into tb_user(name,age,gender) values ('Tom5',120,'男');
 
 我们来看一个例子：
 
-<a data-fancybox title="image-20220420220227426" href="http://mk.xxoutman.cn/img/image-20220420220227426.png">![image-20220420220227426](http://mk.xxoutman.cn/img/image-20220420220227426.png)</a>
+![image-20220420220227426](http://mk.xxoutman.cn/img/image-20220420220227426.png)
 
 左侧的 emp 表是员工表，里面存储员工的基本信息，包含员工的 ID、姓名、年龄、职位、薪资、入职日 期、上级主管 ID、部门 ID，在员工的信息中存储的是部门的 ID dept_id，而这个部门的 ID 是关联的 部门表 dept 的主键 id，那 emp 表的 dept_id 就是外键,关联的是另一张表的主键。
 
@@ -1683,11 +1683,11 @@ VALUES
 
 ```
 
-<a data-fancybox title="image-20220420220351417" href="http://mk.xxoutman.cn/img/image-20220420220351417.png">![image-20220420220351417](http://mk.xxoutman.cn/img/image-20220420220351417.png)</a>
+![image-20220420220351417](http://mk.xxoutman.cn/img/image-20220420220351417.png)
 
 接下来，我们可以做一个测试，删除 id 为 1 的部门信息。
 
-<a data-fancybox title="image-20220420220409840" href="http://mk.xxoutman.cn/img/image-20220420220409840.png">![image-20220420220409840](http://mk.xxoutman.cn/img/image-20220420220409840.png)</a>
+![image-20220420220409840](http://mk.xxoutman.cn/img/image-20220420220409840.png)
 
 结果，我们看到删除成功，而删除成功之后，部门表不存在 id 为 1 的部门，而在 emp 表中还有很多的员 工，关联的为 id 为 1 的部门，此时就出现了==数据的不完整性。== 而要想解决这个问题就得通过==数据库的外键约束。==
 
@@ -1713,11 +1713,11 @@ ALTER TABLE 表名 ADD CONSTRAINT 外键名称 FOREIGN KEY (外键字段名) REF
 alter table emp add constraint fk_emp_dept_id foreign key (dept_id) references dept(id);
 ```
 
-<a data-fancybox title="image-20220420220559756" href="http://mk.xxoutman.cn/img/image-20220420220559756.png">![image-20220420220559756](http://mk.xxoutman.cn/img/image-20220420220559756.png)</a>
+![image-20220420220559756](http://mk.xxoutman.cn/img/image-20220420220559756.png)
 
 添加了外键约束之后，我们再到 dept 表(父表)删除 id 为 1 的记录，然后看一下会发生什么现象。 此时 将会报错，不能删除或更新父表记录，因为存在外键约束。
 
-<a data-fancybox title="image-20220420220618092" href="http://mk.xxoutman.cn/img/image-20220420220618092.png">![image-20220420220618092](http://mk.xxoutman.cn/img/image-20220420220618092.png)</a>
+![image-20220420220618092](http://mk.xxoutman.cn/img/image-20220420220618092.png)
 
 2). 删除外键
 
@@ -1765,7 +1765,7 @@ dept(id) on update cascade on delete cascade ;
 
 A. 修改父表 id 为 1 的记录，将 id 修改为 6
 
-<a data-fancybox title="image-20220420220859020" href="http://mk.xxoutman.cn/img/image-20220420220859020.png">![image-20220420220859020](http://mk.xxoutman.cn/img/image-20220420220859020.png)</a>
+![image-20220420220859020](http://mk.xxoutman.cn/img/image-20220420220859020.png)
 
 我们发现，原来在子表中 dept_id 值为 1 的记录，现在也变为 6 了，这就是 cascade 级联的效果。
 
@@ -1773,7 +1773,7 @@ A. 修改父表 id 为 1 的记录，将 id 修改为 6
 
 B. 删除父表 id 为 6 的记录
 
-<a data-fancybox title="image-20220420220925605" href="http://mk.xxoutman.cn/img/image-20220420220925605.png">![image-20220420220925605](http://mk.xxoutman.cn/img/image-20220420220925605.png)</a>
+![image-20220420220925605](http://mk.xxoutman.cn/img/image-20220420220925605.png)
 
 我们发现，父表的数据删除成功了，但是子表中关联的记录也被级联删除了。
 
@@ -1788,11 +1788,11 @@ dept(id) on update set null on delete set null ;
 
 接下来，我们删除 id 为 1 的数据，看看会发生什么样的现象。
 
-<a data-fancybox title="image-20220420221013956" href="http://mk.xxoutman.cn/img/image-20220420221013956.png">![image-20220420221013956](http://mk.xxoutman.cn/img/image-20220420221013956.png)</a>
+![image-20220420221013956](http://mk.xxoutman.cn/img/image-20220420221013956.png)
 
 我们发现父表的记录是可以正常的删除的，父表的数据删除之后，再打开子表 emp，我们发现子表 emp 的 dept_id 字段，原来 dept_id 为 1 的数据，现在都被置为 NULL 了。
 
-<a data-fancybox title="image-20220420221024103" href="http://mk.xxoutman.cn/img/image-20220420221024103.png">![image-20220420221024103](http://mk.xxoutman.cn/img/image-20220420221024103.png)</a>
+![image-20220420221024103](http://mk.xxoutman.cn/img/image-20220420221024103.png)
 
 这就是 SET NULL 这种删除/更新行为的效果。
 
@@ -1814,7 +1814,7 @@ dept(id) on update set null on delete set null ;
 - 关系: 一个部门对应多个员工，一个员工对应一个部门
 - 实现: 在多的一方建立外键，指向一的一方的主键
 
-<a data-fancybox title="image-20220423115018117" href="http://mk.xxoutman.cn/img/image-20220423115018117.png">![image-20220423115018117](http://mk.xxoutman.cn/img/image-20220423115018117.png)</a>
+![image-20220423115018117](http://mk.xxoutman.cn/img/image-20220423115018117.png)
 
 ### 5.1.2 多对多
 
@@ -1822,7 +1822,7 @@ dept(id) on update set null on delete set null ;
 - 关系: 一个学生可以选修多门课程，一门课程也可以供多个学生选择
 - 实现: 建立第三张中间表，中间表至少包含两个外键，分别关联两方主键
 
-<a data-fancybox title="image-20220423115052195" href="http://mk.xxoutman.cn/img/image-20220423115052195.png">![image-20220423115052195](http://mk.xxoutman.cn/img/image-20220423115052195.png)</a>
+![image-20220423115052195](http://mk.xxoutman.cn/img/image-20220423115052195.png)
 
 对应的 SQL 脚本:
 
@@ -1859,7 +1859,7 @@ insert into student_course values (null,1,1),(null,1,2),(null,1,3),(null,2,2),(n
 - 关系: 一对一关系，多用于单表拆分，将一张表的基础字段放在一张表中，其他详情字段放在另 一张表中，以提升操作效率
 - 实现: 在任意一方加入外键，关联另外一方的主键，并且设置外键为唯一的(UNIQUE)
 
-<a data-fancybox title="image-20220423115304542" href="http://mk.xxoutman.cn/img/image-20220423115304542.png">![image-20220423115304542](http://mk.xxoutman.cn/img/image-20220423115304542.png)</a>
+![image-20220423115304542](http://mk.xxoutman.cn/img/image-20220423115304542.png)
 
 对应的 SQL 脚本:
 
@@ -1958,19 +1958,19 @@ dept 表共 6 条记录，emp 表共 17 条记录。
 
 那么我们要执行多表查询，就只需要使用逗号分隔多张表即可，如：`select * from emp , dept ;`具体的执行结果如下:
 
-<a data-fancybox title="image-20220423115820619" href="http://mk.xxoutman.cn/img/image-20220423115820619.png">![image-20220423115820619](http://mk.xxoutman.cn/img/image-20220423115820619.png)</a>
+![image-20220423115820619](http://mk.xxoutman.cn/img/image-20220423115820619.png)
 
 此时,我们看到查询结果中包含了大量的结果集，总共 102 条记录，而这其实就是员工表 emp 所有的记录 (17) 与 部门表 dept 所有记录(6) 的所有组合情况，这种现象称之为笛卡尔积。接下来，就来简单 介绍下笛卡尔积。
 
 笛卡尔积: 笛卡尔乘积是指在数学中，两个集合 A 集合 和 B 集合的所有组合情况。
 
-<a data-fancybox title="image-20220423115853930" href="http://mk.xxoutman.cn/img/image-20220423115853930.png">![image-20220423115853930](http://mk.xxoutman.cn/img/image-20220423115853930.png)</a>
+![image-20220423115853930](http://mk.xxoutman.cn/img/image-20220423115853930.png)
 
 而在多表查询中，我们是需要消除无效的笛卡尔积的，只保留两张表关联部分的数据。
 
-<a data-fancybox title="image-20220423115910162" href="http://mk.xxoutman.cn/img/image-20220423115910162.png">![image-20220423115910162](http://mk.xxoutman.cn/img/image-20220423115910162.png)</a>
+![image-20220423115910162](http://mk.xxoutman.cn/img/image-20220423115910162.png)
 
-<a data-fancybox title="image-20220423115924435" href="http://mk.xxoutman.cn/img/image-20220423115924435.png">![image-20220423115924435](http://mk.xxoutman.cn/img/image-20220423115924435.png)</a>
+![image-20220423115924435](http://mk.xxoutman.cn/img/image-20220423115924435.png)
 
 在 SQL 语句中，如何来去除无效的笛卡尔积呢？ 我们可以给多表查询加上连接查询的条件即可。
 
@@ -1978,7 +1978,7 @@ dept 表共 6 条记录，emp 表共 17 条记录。
 select * from emp , dept where emp.dept_id = dept.id;
 ```
 
-<a data-fancybox title="image-20220423115951673" href="http://mk.xxoutman.cn/img/image-20220423115951673.png">![image-20220423115951673](http://mk.xxoutman.cn/img/image-20220423115951673.png)</a>
+![image-20220423115951673](http://mk.xxoutman.cn/img/image-20220423115951673.png)
 
 而由于 id 为 17 的员工，没有 dept_id 字段值，所以在多表查询时，根据连接查询的条件并没有查询 到。
 
@@ -1998,11 +1998,11 @@ select * from emp , dept where emp.dept_id = dept.id;
 
 - 子查询
 
-<a data-fancybox title="image-20220423120107696" href="http://mk.xxoutman.cn/img/image-20220423120107696.png">![image-20220423120107696](http://mk.xxoutman.cn/img/image-20220423120107696.png)</a>
+![image-20220423120107696](http://mk.xxoutman.cn/img/image-20220423120107696.png)
 
 ## 5.3 内连接
 
-<a data-fancybox title="image-20220423120135818" href="http://mk.xxoutman.cn/img/image-20220423120135818.png">![image-20220423120135818](http://mk.xxoutman.cn/img/image-20220423120135818.png)</a>
+![image-20220423120135818](http://mk.xxoutman.cn/img/image-20220423120135818.png)
 
 内连接查询的是两张表交集部分的数 据。(也就是绿色部分的数据)
 
@@ -2058,7 +2058,7 @@ select e.name, d.name from emp e join dept d on e.dept_id = d.id;
 
 ## 5.4 外连接
 
-<a data-fancybox title="image-20220425184427895" href="http://mk.xxoutman.cn/img/image-20220425184427895.png">![image-20220425184427895](http://mk.xxoutman.cn/img/image-20220425184427895.png)</a>
+![image-20220425184427895](http://mk.xxoutman.cn/img/image-20220425184427895.png)
 
 外连接分为两种，分别是：左外连接 和 右外连接。具体的语法结构为：
 
@@ -2165,7 +2165,7 @@ union all
 select * from emp where age > 50;
 ```
 
-<a data-fancybox title="image-20220425184933815" href="http://mk.xxoutman.cn/img/image-20220425184933815.png">![image-20220425184933815](http://mk.xxoutman.cn/img/image-20220425184933815.png)</a>
+![image-20220425184933815](http://mk.xxoutman.cn/img/image-20220425184933815.png)
 
 union all 查询出来的结果，仅仅进行简单的合并，并未去重。
 
@@ -2175,13 +2175,13 @@ union
 select * from emp where age > 50;
 ```
 
-<a data-fancybox title="image-20220425185001706" href="http://mk.xxoutman.cn/img/image-20220425185001706.png">![image-20220425185001706](http://mk.xxoutman.cn/img/image-20220425185001706.png)</a>
+![image-20220425185001706](http://mk.xxoutman.cn/img/image-20220425185001706.png)
 
 union 联合查询，会对查询出来的结果进行去重处理。
 
 **注意**： 如果多条查询语句查询出来的结果，字段数量不一致，在进行 union/union all 联合查询时，将会报错。如：
 
-<a data-fancybox title="image-20220425185044451" href="http://mk.xxoutman.cn/img/image-20220425185044451.png">![image-20220425185044451](http://mk.xxoutman.cn/img/image-20220425185044451.png)</a>
+![image-20220425185044451](http://mk.xxoutman.cn/img/image-20220425185044451.png)
 
 ## 5.6 子查询
 
@@ -2561,19 +2561,19 @@ s.id = sc.studentid and sc.courseid = c.id ;
 
 就比如: 张三给李四转账 1000 块钱，张三银行账户的钱减少 1000，而李四银行账户的钱要增加 1000。 这一组操作就必须在一个事务的范围内，要么都成功，要么都失败。
 
-<a data-fancybox title="image-20220425191715558" href="http://mk.xxoutman.cn/img/image-20220425191715558.png">![image-20220425191715558](http://mk.xxoutman.cn/img/image-20220425191715558.png)</a>
+![image-20220425191715558](http://mk.xxoutman.cn/img/image-20220425191715558.png)
 
 正常情况: 转账这个操作, 需要分为以下这么三步来完成 , 三步完成之后, 张三减少 1000, 而李四增加 1000, 转账成功 :
 
-<a data-fancybox title="image-20220425191751701" href="http://mk.xxoutman.cn/img/image-20220425191751701.png">![image-20220425191751701](http://mk.xxoutman.cn/img/image-20220425191751701.png)</a>
+![image-20220425191751701](http://mk.xxoutman.cn/img/image-20220425191751701.png)
 
 异常情况: 转账这个操作, 也是分为以下这么三步来完成 , 在执行第三步是报错了, 这样就导致张 三减少 1000 块钱, 而李四的金额没变, 这样就造成了数据的不一致, 就出现问题了。
 
-<a data-fancybox title="image-20220425191808646" href="http://mk.xxoutman.cn/img/image-20220425191808646.png">![image-20220425191808646](http://mk.xxoutman.cn/img/image-20220425191808646.png)</a>
+![image-20220425191808646](http://mk.xxoutman.cn/img/image-20220425191808646.png)
 
 为了解决上述的问题，就需要通过数据的事务来完成，我们只需要在业务逻辑执行之前开启事务，执行 完毕后提交事务。如果执行过程中报错，则回滚事务，把数据恢复到事务开始之前的状态。
 
-<a data-fancybox title="image-20220425191837504" href="http://mk.xxoutman.cn/img/image-20220425191837504.png">![image-20220425191837504](http://mk.xxoutman.cn/img/image-20220425191837504.png)</a>
+![image-20220425191837504](http://mk.xxoutman.cn/img/image-20220425191837504.png)
 
 > 注意： 默认 MySQL 的事务是自动提交的，也就是说，当执行完一条 DML 语句时，MySQL 会立即隐式的提交事务。
 
@@ -2610,7 +2610,7 @@ update account set money = money + 1000 where name = '李四';
 
 测试完毕之后检查数据的状态, 可以看到数据操作前后是一致的。
 
-<a data-fancybox title="image-20220425192013087" href="http://mk.xxoutman.cn/img/image-20220425192013087.png">![image-20220425192013087](http://mk.xxoutman.cn/img/image-20220425192013087.png)</a>
+![image-20220425192013087](http://mk.xxoutman.cn/img/image-20220425192013087.png)
 
 2). 测试异常情况
 
@@ -2628,7 +2628,7 @@ update account set money = money + 1000 where name = '李四';
 
 我们把数据都恢复到 2000， 然后再次一次性执行上述的 SQL 语句(出错了.... 这句话不符合 SQL 语 法,执行就会报错)，检查最终的数据情况, 发现数据在操作前后不一致了。
 
-<a data-fancybox title="image-20220425192156756" href="http://mk.xxoutman.cn/img/image-20220425192156756.png">![image-20220425192156756](http://mk.xxoutman.cn/img/image-20220425192156756.png)</a>
+![image-20220425192156756](http://mk.xxoutman.cn/img/image-20220425192156756.png)
 
 ### 6.2.2 控制事务一
 
@@ -2704,25 +2704,25 @@ commit;
 
 上述就是事务的四大特性，简称 ACID。
 
-<a data-fancybox title="image-20220425192446650" href="http://mk.xxoutman.cn/img/image-20220425192446650.png">![image-20220425192446650](http://mk.xxoutman.cn/img/image-20220425192446650.png)</a>
+![image-20220425192446650](http://mk.xxoutman.cn/img/image-20220425192446650.png)
 
 ## 6.4 并发事务问题
 
 1). 赃读：一个事务读到另外一个事务还没有提交的数据。
 
-<a data-fancybox title="image-20220425192515870" href="http://mk.xxoutman.cn/img/image-20220425192515870.png">![image-20220425192515870](http://mk.xxoutman.cn/img/image-20220425192515870.png)</a>
+![image-20220425192515870](http://mk.xxoutman.cn/img/image-20220425192515870.png)
 
 比如 B 读取到了 A 未提交的数据。
 
 2). 不可重复读：一个事务先后读取同一条记录，但两次读取的数据不同，称之为不可重复读。
 
-<a data-fancybox title="image-20220425192541331" href="http://mk.xxoutman.cn/img/image-20220425192541331.png">![image-20220425192541331](http://mk.xxoutman.cn/img/image-20220425192541331.png)</a>
+![image-20220425192541331](http://mk.xxoutman.cn/img/image-20220425192541331.png)
 
 事务 A 两次读取同一条记录，但是读取到的数据却是不一样的。
 
 3). 幻读：一个事务按照条件查询数据时，没有对应的数据行，但是在插入数据时，又发现这行数据 已经存在，好像出现了 "幻影"。
 
-<a data-fancybox title="image-20220425192607200" href="http://mk.xxoutman.cn/img/image-20220425192607200.png">![image-20220425192607200](http://mk.xxoutman.cn/img/image-20220425192607200.png)</a>
+![image-20220425192607200](http://mk.xxoutman.cn/img/image-20220425192607200.png)
 
 ## 6.5 事务隔离级别
 
