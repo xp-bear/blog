@@ -17,7 +17,7 @@ module.exports = [
         text: "CSS3系列",
         items: [
           { text: "阿里云", link: "https://www.aliyun1.com/" },
-          { text: "腾讯云", link: "https://cloud.tencent1.com/" },
+          { text: "CSS3技巧", link: "/CSS3/css/" },
         ],
       },
       {
