@@ -6,7 +6,7 @@
 export default {
   data() {
     return {
-      buttonText: "Copy",
+      buttonText: "复制",
     };
   },
 
@@ -40,10 +40,10 @@ export default {
     },
 
     setText() {
-      this.buttonText = "Copied!";
+      this.buttonText = `已复制√`;
 
       setTimeout(() => {
-        this.buttonText = "Copy";
+        this.buttonText = "复制";
       }, 1000);
     },
   },

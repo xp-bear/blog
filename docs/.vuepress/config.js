@@ -17,13 +17,21 @@ module.exports = {
     ["link", { rel: "stylesheet", type: "text/css", href: "/css/fancybox.css" }],
   ],
   markdown: {
-    lineNumbers: true,
+    lineNumbers: true, //显示行号
+    // markdown-it-anchor 的选项
+    anchor: { permalink: false },
+    // markdown-it-toc 的选项
+    toc: { includeLevel: [1, 2] },
+    extendMarkdown: (md) => {
+      // 使用更多的 markdown-it 插件!
+      md.use(require("markdown-it"));
+    },
   },
   themeConfig: {
     nav: require("./nav.js"),
     sidebar: require("./sidebar.js"),
     sidebarDepth: 2,
-    lastUpdated: "Last Updated",
+    lastUpdated: "上次更新时间",
     searchMaxSuggestoins: 10,
     serviceWorker: {
       updatePopup: {
