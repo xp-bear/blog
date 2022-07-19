@@ -6,6 +6,9 @@ module.exports = {
   "/python/spyder/": require("../python/spyder/sidebar"), //Python教程 -> flask笔记
 
   "/sundry/mysql/": require("../sundry/mysql/sidebar"), //杂项系列 -> mysql笔记
+
   "/vue3_ts/vue3/": require("../vue3_ts/vue3/sidebar"), //vue3+ts系列 -> vue3笔记
-  "/CSS3/css/": require("../CSS3/css/sidebar"), //vue3+ts系列 -> vue3笔记
+  "/vue3_ts/ts/": require("../vue3_ts/ts/sidebar"), //vue3+ts系列 -> ts笔记
+
+  "/CSS3/css/": require("../CSS3/css/sidebar"), //css3系列 -> css笔记
 };

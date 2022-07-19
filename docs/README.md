@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: /img/bg.gif
+heroImage: /img/bg2.gif
 actionText: 开启王者之旅 →
 actionLink: /home/
 # features:

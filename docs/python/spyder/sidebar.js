@@ -25,6 +25,11 @@ module.exports = [
     children: ["/python/spyder/notes/04-requests"],
   },
   {
+    title: "05-httpx",
+    collapsable: true,
+    children: ["/python/spyder/notes/05-httpx"],
+  },
+  {
     title: "05-openpyxl",
     collapsable: true,
     children: ["/python/spyder/notes/05-openpyxl"],
